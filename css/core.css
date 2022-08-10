@@ -1,0 +1,75 @@
+:root {
+    /* Color used for background formerly d3d3d3*/
+    --colorBase: #f5f5f5;
+    /* Color used for elements and body text*/
+    --colorFirst: #696969;
+    /* Color used for element text*/
+    --colorSecond: #b5b5b5;
+
+    /* Color used for background in "darkmode" */
+    --colorBaseDark: #4f4f4f;
+    /* Color used for elements and body text in "darkmode" */
+    --colorFirstDark: #b5b5b5;
+    /* Color used for element text in "darkmode*/
+    --colorSecondDark: #696969;
+}
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+blockquote,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+button,
+input,
+select,
+textarea {
+    margin: 0;
+}
+
+footer,
+header,
+section {
+    display: block;
+}
+
+hr {
+    padding: 0;
+}
+
+html {
+    background-color: var(--colorBase);
+}
+
+body {
+    color: var(--colorFirst);
+}
+
+.block {
+    background-color: var(--colorFirst);
+    color: var(--colorSecond);
+    border-radius: 7px;
+}
+
+/* ====DARK==== */
+html .dark {
+    background-color: var(--colorBaseDark);
+}
+
+/* Slate grid */
+
