@@ -5,6 +5,10 @@
     --colorFirst: #696969;
     /* Color used for element text*/
     --colorSecond: #b5b5b5;
+    /* Color used for outlines */
+    --colorLine: #1e1e1e;
+
+    --colorWeak: #d7d7d7;
 
     /* Color used for background in "darkmode" */
     --colorBaseDark: #4f4f4f;
@@ -12,6 +16,13 @@
     --colorFirstDark: #b5b5b5;
     /* Color used for element text in "darkmode*/
     --colorSecondDark: #696969;
+
+
+    --roundedCorner: 5px;
+}
+
+:focus, :focus-visible, :active{
+    outline: none;
 }
 
 html,
@@ -54,10 +65,104 @@ hr {
 
 html {
     background-color: var(--colorBase);
+    font-size: 16px;
+}
+
+body,
+input {
+    font-family: Helvetica, Arial, Verdana, sans-serif;
 }
 
 body {
-    color: var(--colorFirst);
+    color: var(--colorLine);
+}
+
+.pad {
+    padding: calc(0.5em - 1px);
+}
+
+nav {
+    background-color: var(--colorFirst);
+    color: var(--colorBase);
+    display: flex;
+    align-items: center;
+    min-height: calc(1.5em + 0.75rem + 2px);
+}
+
+nav.seperate, nav.push-apart {
+    justify-content: space-between;
+}
+
+nav.split {
+    justify-content: space-around;
+}
+
+nav.split-evenly {
+    justify-content: space-evenly;
+}
+
+nav.center, nav.push-center {
+    justify-content: center;
+}
+
+nav.push-start {
+    justify-content: flex-start;
+}
+
+nav.push-end {
+    justify-content: flex-end;
+}
+
+
+button {
+    background-color: var(--colorBase);
+    border-color: var(--colorLine);
+    border-width: 1px;
+    border-radius: var(--roundedCorner);
+    padding: calc(0.5em - 1px);
+    cursor: pointer;
+    filter:brightness(100%);
+}
+
+button:not(.no-hover):hover, button.show-hover:not(.no-hover){
+    filter: brightness(95%);
+}
+
+button.rounded {
+    border-radius: 999px;
+}
+
+button.danger {
+    background-color: #fd5b58ff;
+}
+
+input {
+    background-color: var(--colorBase);
+    color: var(--colorSecond);
+    border-color: var(--colorWeak);
+    border-width: 1px;
+    border-radius: var(--roundedCorner);
+    min-height: 2em; /* May move to own cat to add text area */
+}
+
+input.bright {
+    background-color: #f5f5f5;
+}
+
+input.set-in {
+    background-color: inherit;
+    color: inherit;
+    border: 0;
+    border-bottom: 1px solid currentColor;
+}
+
+input:not(.no-hover):not(.set-in):hover, input.show-hover:not(.set-in){
+    border-color: var(--colorLine);
+}
+
+input:not(.no-selected):not(.set-in):focus, input:not(.no-selected):not(.set-in):active, input.show-selected:not(.set-in) {
+    box-shadow: 0 0 0 0.1em #57c9fa;
+    border-color: var(--colorLine);
 }
 
 .block {
@@ -66,10 +171,78 @@ body {
     border-radius: 7px;
 }
 
+.code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 /* ====DARK==== */
 html .dark {
     background-color: var(--colorBaseDark);
 }
 
-/* Slate grid */
+/* Slate Layout */
+/* Sidebar Body Sidebar */
+/* Slate rulers */
+
+
+/* Slate Nudge */
+.nudge, .nudge-1 {
+    margin: calc(0.33em - 1px);
+}
+
+.nudge-left, .nudge-left-1 {
+    margin-right: calc(0.33em - 1px);
+}
+
+.nudge-up, .nudge-up-1 {
+    margin-bottom: calc(0.33em - 1px);
+}
+
+.nudge-right, .nudge-right-1 {
+    margin-left: calc(0.33em - 1px);
+}
+
+.nudge-down, .nudge-down-1 {
+    margin-top: calc(0.33em - 1px);
+}
+
+.nudge-2 {
+    margin: calc(0.66em - 1px);
+}
+
+.nudge-left-2 {
+    margin-right: calc(0.66em - 1px);
+}
+
+.nudge-up-2 {
+    margin-bottom: calc(0.66em - 1px);
+}
+
+.nudge-right-2 {
+    margin-left: calc(0.66em - 1px);
+}
+
+.nudge-down-2 {
+    margin-top: calc(0.66em - 1px);
+}
+
+.nudge-3 {
+    margin: calc(1em - 1px);
+}
+
+.nudge-left-3 {
+    margin-right: calc(1em - 1px);
+}
+
+.nudge-up-3 {
+    margin-bottom: calc(1em - 1px);
+}
+
+.nudge-right-3 {
+    margin-left: calc(1em - 1px);
+}
+
+.nudge-down-3 {
+    margin-top: calc(1em - 1px);
+}
 
