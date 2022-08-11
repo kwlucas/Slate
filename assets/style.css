@@ -1,0 +1,7 @@
+.layout-display > div {
+    text-align: center;
+}
+
+.layout-display .block {
+    padding: 0.5rem;
+}
