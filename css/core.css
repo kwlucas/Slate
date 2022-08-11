@@ -184,6 +184,155 @@ html .dark {
 /* Sidebar Body Sidebar */
 /* Slate rulers */
 
+/* body.CLASS section {all sections if body has CLASS}
+/* section or .section == container and like a row if there is no .row children */
+/* Use .no-layout to make section not function like a row or container  */
+/* Use .row-contains-# to auto size items so that # of them fits in a row */
+/* Use .(size/take/use/fill)-FRACTION to size colums*/
+/* To use "/" in css write "\/" */
+
+body.format-sections section:not(.no-format){
+    display: flex;
+    margin: -0.5rem;
+}
+
+body.format-sections section:not(.no-format) > div, body.format-sections section:not(.no-format) > .spread-auto{
+    flex: 1 1 0;
+}
+
+body.format-sections section:not(.no-format) > .spread-1\/12{
+    width: 8.3333%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-1\/10 {
+    width: 10%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-1\/8 {
+    width: 12.5%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-2\/12,
+body.format-sections section:not(.no-format) > .spread-1\/6 {
+    width: 16.6666%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-2\/10,
+body.format-sections section:not(.no-format) > .spread-1\/5 {
+    width: 20%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-3\/12,
+body.format-sections section:not(.no-format) > .spread-2\/8,
+body.format-sections section:not(.no-format) > .spread-1\/4 {
+    width: 25%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-3\/10 {
+    width: 30%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-4\/12,
+body.format-sections section:not(.no-format) > .spread-2\/6,
+body.format-sections section:not(.no-format) > .spread-1\/3 {
+    width: 33.3333%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-3\/8 {
+    width: 37.5%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-4\/10,
+body.format-sections section:not(.no-format) > .spread-2\/5 {
+    width: 40%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-5\/12{
+    width: 41.6666%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-6\/12,
+body.format-sections section:not(.no-format) > .spread-5\/10,
+body.format-sections section:not(.no-format) > .spread-4\/8,
+body.format-sections section:not(.no-format) > .spread-3\/6,
+body.format-sections section:not(.no-format) > .spread-2\/4,
+body.format-sections section:not(.no-format) > .spread-1\/2 {
+    width: 50%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-7\/12{
+    width: 58.3333%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-6\/10,
+body.format-sections section:not(.no-format) > .spread-3\/5 {
+    width: 60%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-5\/8 {
+    width: 62.5%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-8\/12,
+body.format-sections section:not(.no-format) > .spread-4\/6,
+body.format-sections section:not(.no-format) > .spread-2\/3 {
+    width: 66.6666%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-7\/10 {
+    width: 70%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-9\/12,
+body.format-sections section:not(.no-format) > .spread-6\/8,
+body.format-sections section:not(.no-format) > .spread-3\/4 {
+    width: 75%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-8\/10,
+body.format-sections section:not(.no-format) > .spread-4\/5 {
+    width: 80%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-10\/12,
+body.format-sections section:not(.no-format) > .spread-5\/6 {
+    width: 83.3333%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-7\/8{
+    width: 87.5%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-9\/10 {
+    width: 90%;
+    flex: none;
+}
+
+body.format-sections section:not(.no-format) > .spread-1\/12 {
+    width: 91.6666%;
+    flex: none;
+}
 
 /* Slate Nudge */
 .nudge, .nudge-1 {
