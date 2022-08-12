@@ -17,6 +17,8 @@
     /* Color used for element text in "darkmode*/
     --colorSecondDark: #696969;
 
+    --dangerColor: #fd5b58ff;
+
 
     --roundedCorner: 5px;
 }
@@ -139,8 +141,10 @@ button.rounded {
 }
 
 button.danger {
-    background-color: #fd5b58ff;
+    background-color: var(--dangerColor);
 }
+
+/* Button styels and groups */
 
 input {
     background-color: var(--colorBase);
@@ -175,6 +179,9 @@ input.show-selected:not(.set-in) {
     border-color: var(--colorLine);
 }
 
+/* Tables with effect like hover */
+/* Hide and show content with peek and show more  */
+
 .block {
     background-color: var(--colorFirst);
     color: var(--colorBase);
@@ -185,8 +192,12 @@ input.show-selected:not(.set-in) {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.code-block {
+    border-radius: var(--roundedCorner);
+}
+
 /* ====DARK==== */
-html .dark {
+html .theme-dark {
     background-color: var(--colorBaseDark);
 }
 
@@ -199,14 +210,12 @@ html .dark {
 
 /* Slate Layout */
 /* Sidebar Body Sidebar */
-/* Slate rulers */
+/* Slate Sections */
 
 /* body.CLASS section {all sections if body has CLASS}
 /* section or .section == container and like a row if there is no .row children */
-/* Use .no-layout to make section not function like a row or container  */
+/* Use .no-format to make section not function like a row or container  */
 /* Use .row-contains-# to auto size items so that # of them fits in a row */
-/* Use .(size/take/use/fill)-FRACTION to size colums*/
-/* To use "/" in css write "\/" */
 
 .slate-section,
 body.format-sections section:not(.no-format) {
@@ -492,6 +501,7 @@ body.format-sections section:not(.no-format)>.row {
     width: 100%;
     flex: none;
 }
+
 
 /* Slate Nudge */
 .nudge,
