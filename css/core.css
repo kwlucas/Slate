@@ -134,31 +134,47 @@ nav {
 }
 
 nav.seperate,
-nav.push-apart {
+nav.push-apart,
+.container.seperate,
+.container.push-apart {
     justify-content: space-between;
 }
 
-nav.split {
+nav.split,
+.container.split {
     justify-content: space-around;
 }
 
-nav.split-evenly {
+nav.split-evenly,
+.container.split-evenly {
     justify-content: space-evenly;
 }
 
 nav.center,
-nav.push-center {
+nav.push-center,
+.container.center,
+.container.push-center {
     justify-content: center;
 }
 
-nav.push-start {
+nav.push-start,
+.container.push-start {
     justify-content: flex-start;
 }
 
-nav.push-end {
+nav.push-end,
+.container.push-end {
     justify-content: flex-end;
 }
 
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container > *{
+    margin: 0 calc(0.5rem - 1px);
+}
 
 button {
     background-color: var(--nearWhite);
