@@ -185,6 +185,42 @@ button.danger {
 
 /* Button styels and groups */
 
+.button-strip {
+    display: flex;
+    align-items: center;
+}
+
+.button-strip button {
+    border-radius: 0;
+}
+
+.button-strip:not(.vertical) button {
+    margin: 0 -1px;
+}
+
+.button-strip:not(.vertical) button:first-child {
+    border-top-left-radius: var(--roundedCorner);
+    border-bottom-left-radius: var(--roundedCorner);
+    margin-left: 0;
+}
+
+.button-strip:not(.vertical) button:last-child {
+    border-top-right-radius: var(--roundedCorner);
+    border-bottom-right-radius: var(--roundedCorner);
+    margin-right: 0;
+}
+
+.button-strip:not(.vertical).rounded button:first-child {
+    border-top-left-radius: 999px;
+    border-bottom-left-radius: 999px;
+}
+
+.button-strip:not(.vertical).rounded button:last-child {
+    border-top-right-radius: 999px;
+    border-bottom-right-radius: 999px;
+}
+
+
 input {
     background-color: var(--nearWhite);
     color: var(--colorSecond);
