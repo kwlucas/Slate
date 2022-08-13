@@ -1,21 +1,18 @@
 :root {
     /* Color used for background formerly d3d3d3*/
-    --colorBase: #f5f5f5;
+    --nearWhite: #f5f5f5;
     /* Color used for elements and body text*/
-    --colorFirst: #696969;
+    --middleGrey: #696969;
     /* Color used for element text*/
-    --colorSecond: #b5b5b5;
+    --lighterGrey: #b5b5b5;
     /* Color used for outlines */
-    --colorLine: #1e1e1e;
+    --nearBlack: #1e1e1e;
 
-    --colorWeak: #d7d7d7;
+    --whiteGrey: #d7d7d7;
 
-    /* Color used for background in "darkmode" */
-    --colorBaseDark: #4f4f4f;
+    --darkerGrey: #4f4f4f;
     /* Color used for elements and body text in "darkmode" */
-    --colorFirstDark: #b5b5b5;
     /* Color used for element text in "darkmode*/
-    --colorSecondDark: #696969;
 
     --dangerColor: #fd5b58ff;
 
@@ -68,7 +65,6 @@ hr {
 }
 
 html {
-    background-color: var(--colorBase);
     font-size: 16px;
     box-sizing: border-box;
 }
@@ -82,7 +78,37 @@ input {
     font-family: Helvetica, Arial, Verdana, sans-serif;
 }
 
+/* Color Themes  */
+
 body {
+    /* Color used for background formerly d3d3d3*/
+    --colorBase: var(--nearWhite);
+    /* Color used for elements and body text*/
+    --colorFirst: var(--middleGrey);
+    /* Color used for element text*/
+    --colorSecond: var(--lighterGrey);
+    /* Color used for outlines */
+    --colorLine: var(--nearBlack);
+
+    --colorWeak: var(--whiteGrey);
+}
+
+body.theme-dark {
+    /* Color used for background formerly d3d3d3*/
+    --colorBase: var(--darkerGrey);
+    /* Color used for elements and body text*/
+    --colorFirst: var(--lighterGrey);
+    /* Color used for element text*/
+    --colorSecond: var(--middleGrey);
+    /* Color used for outlines */
+    --colorLine: var(--nearWhite);
+    /* STILL CONSIDERING WHAT COLOR TO USE FOR DRAK THEME */
+    --colorWeak: var(--whiteGrey);
+}
+
+body,
+main {
+    background-color: var(--colorBase);
     color: var(--colorLine);
 }
 
@@ -122,7 +148,7 @@ nav.push-end {
 
 
 button {
-    background-color: var(--colorBase);
+    background-color: var(--nearWhite);
     border-color: var(--colorLine);
     border-width: 1px;
     border-radius: var(--roundedCorner);
@@ -147,7 +173,7 @@ button.danger {
 /* Button styels and groups */
 
 input {
-    background-color: var(--colorBase);
+    background-color: var(--nearWhite);
     color: var(--colorSecond);
     border-color: var(--colorWeak);
     border-width: 1px;
@@ -195,12 +221,6 @@ input.show-selected:not(.set-in) {
 .code-block {
     border-radius: var(--roundedCorner);
 }
-
-/* ====DARK==== */
-html .theme-dark {
-    background-color: var(--colorBaseDark);
-}
-
 
 /* text and inner element control */
 
