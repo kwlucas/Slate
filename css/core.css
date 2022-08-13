@@ -13,8 +13,11 @@
     --darkerGrey: #4f4f4f;
     /* Color used for elements and body text in "darkmode" */
     /* Color used for element text in "darkmode*/
-
+    
+    --cautionColor: #FCFC72;
     --dangerColor: #fd5b58ff;
+    --infoColor: #3FAEFC;/* #57c9fa; */
+    --successColor: #3FFC7B; /*#04AA6D; /* #58FC8C */
 
 
     --roundedCorner: 5px;
@@ -182,8 +185,9 @@ nav.push-end,
 }
 
 button {
-    background-color: var(--nearWhite);
-    border-color: var(--nearBlack);
+    background-color: var(--btn-bg);
+    border-color: var(--btn-border);
+    color: var(--btn-text);
     border-width: 1px;
     border-radius: var(--roundedCorner);
     padding: calc(0.5em - 1px);
@@ -200,8 +204,34 @@ button.rounded {
     border-radius: 999px;
 }
 
+button, button.white {
+    --btn-bg: var(--nearWhite);
+    --btn-border: var(--nearBlack);
+    --btn-text: var(--nearBlack)
+}
+
+button.caution {
+    --btn-bg: var(--cautionColor);
+    --btn-border: var(--nearBlack);
+    --btn-text: var(--nearBlack)
+}
+
 button.danger {
-    background-color: var(--dangerColor);
+    --btn-bg: var(--dangerColor);
+    --btn-border: var(--nearBlack);
+    --btn-text: var(--nearBlack)
+}
+
+button.info {
+    --btn-bg: var(--infoColor);
+    --btn-border: var(--nearBlack);
+    --btn-text: var(--nearBlack)
+}
+
+button.success{
+    --btn-bg: var(--successColor);
+    --btn-border: var(--nearBlack);
+    --btn-text: var(--nearBhite);
 }
 
 /* Button styels and groups */
