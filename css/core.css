@@ -78,6 +78,11 @@ input {
     font-family: Helvetica, Arial, Verdana, sans-serif;
 }
 
+.container:not(:last-child),
+.block:not(:last-child) {
+    margin-bottom: 1.5rem;
+}
+
 /* Color Themes  */
 
 body {
@@ -178,7 +183,7 @@ nav.push-end,
 
 button {
     background-color: var(--nearWhite);
-    border-color: var(--colorLine);
+    border-color: var(--nearBlack);
     border-width: 1px;
     border-radius: var(--roundedCorner);
     padding: calc(0.5em - 1px);
