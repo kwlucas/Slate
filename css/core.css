@@ -80,7 +80,7 @@ input {
 
 .container:not(:last-child),
 .block:not(:last-child) {
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.33rem;
 }
 
 /* Color Themes  */
