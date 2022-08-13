@@ -106,6 +106,19 @@ body.theme-dark {
     --colorWeak: var(--whiteGrey);
 }
 
+body.theme-night {
+    /* Color used for background formerly d3d3d3*/
+    --colorBase: var(--nearBlack);
+    /* Color used for elements and body text*/
+    --colorFirst: var(--darkerGrey);
+    /* Color used for element text*/
+    --colorSecond: var(--middleGrey);
+    /* Color used for outlines */
+    --colorLine: var(--nearWhite);
+    /* STILL CONSIDERING WHAT COLOR TO USE FOR DRAK THEME */
+    --colorWeak: var(--lighterGrey);
+}
+
 body,
 main {
     background-color: var(--colorBase);
