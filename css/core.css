@@ -15,9 +15,13 @@
     /* Color used for element text in "darkmode*/
     
     --cautionColor: #FCFC72;
+    --subCautionColor: #E3E366;
     --dangerColor: #fd5b58ff;
+    --subDangerColor: #E3524F;
     --infoColor: #3FAEFC;/* #57c9fa; */
+    --subInfoColor: #399CE3;
     --successColor: #3FFC7B; /*#04AA6D; /* #58FC8C */
+    --subSuccessColor: #39E36F;
 
 
     --roundedCorner: 5px;
@@ -206,32 +210,32 @@ button.rounded {
 
 button, button.white {
     --btn-bg: var(--nearWhite);
-    --btn-border: var(--nearBlack);
+    --btn-border: var(--whiteGrey);
     --btn-text: var(--nearBlack)
 }
 
 button.caution {
     --btn-bg: var(--cautionColor);
-    --btn-border: var(--nearBlack);
+    --btn-border: var(--subCautionColor);
     --btn-text: var(--nearBlack)
 }
 
 button.danger {
     --btn-bg: var(--dangerColor);
-    --btn-border: var(--nearBlack);
+    --btn-border: var(--subDangerColor);
     --btn-text: var(--nearBlack)
 }
 
 button.info {
     --btn-bg: var(--infoColor);
-    --btn-border: var(--nearBlack);
+    --btn-border: var(--subInfoColor);
     --btn-text: var(--nearBlack)
 }
 
 button.success{
     --btn-bg: var(--successColor);
-    --btn-border: var(--nearBlack);
-    --btn-text: var(--nearBhite);
+    --btn-border: var(--subSuccessColor);
+    --btn-text: var(--nearBlack);
 }
 
 /* Button styels and groups */
