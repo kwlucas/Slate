@@ -1,11 +1,13 @@
 :root {
     --nearWhite: #f5f5f5;
     --whiteGrey: #d7d7d7;
+    --lightGrey: #C2C2C2;
+    --lighterGrey: #828282;/*b5b5b5*/
     --midLightGrey: #757575;
-    --lighterGrey: #b5b5b5;
     --middleGrey: #696969;
     --midDarkGrey: #5C5C5C;
     --darkerGrey: #4f4f4f;
+    --darkGrey: #404040;
     --nearBlack: #1e1e1e;
     /* Color used for elements and body text in "darkmode" */
     /* Color used for element text in "darkmode*/
@@ -97,57 +99,89 @@ input {
 body {
     /* Color used for background formerly d3d3d3*/
     --colorBase: var(--nearWhite);
+    /* Color slightly off from base color */
+    --colorBaseWeak: var(--whiteGrey);
     /* Color used for elements and body text*/
-    --colorFirst: var(--middleGrey);
-    /* Color used for element text*/
-    --colorSecond: var(--lighterGrey);
-    /* Color used for outlines */
-    --colorLine: var(--nearBlack);
+    --primaryElementColor: var(--midLightGrey);
+    /* Color slightly off from color first used for sidebar  */
+    --subPrimeElementColor: var(--lighterGrey);
+    /* Secondary color used for elements*/
+    --secondaryElementColor: var(--middleGrey);
+    /* Color used for text and outlines */
+    --primaryLineColor: var(--nearBlack);
 
-    --colorWeak: var(--whiteGrey);
-    /* Color slightly off form color first used for sidebar  */
-    --colorMinorFirst: var(--midLightGrey);
+    --inverseLineColor: var(--nearWhite);
+
+    --onBaseColorPrimary: var(--nearBlack);
+
+    --onBaseColorSecondary: var(--darkGrey);
+
+    --onElementColorPrimary: var(--nearWhite);
+
+    --onElementColorSecondary: var(--whiteGrey);
+
+    --primaryUIcolor: var(--nearWhite);
+
+    --subPrimaryUIColor: var(--whiteGrey);
+
+    --onUIColorPrimary: var(--nearBlack);
+
+    --secondaryUIcolor: var(--nearWhite);
+
+    --subSecondaryUIColor: var(--whiteGrey);
+
+    --onUIColorSecondary: var(--nearBlack);
 }
 
 body.theme-dark {
-    /* Color used for background formerly d3d3d3*/
-    --colorBase: var(--darkerGrey);
-    /* Color used for elements and body text*/
-    --colorFirst: var(--lighterGrey);
-    /* Color used for element text*/
-    --colorSecond: var(--middleGrey);
-    /* Color used for outlines */
-    --colorLine: var(--nearWhite);
-    /* STILL CONSIDERING WHAT COLOR TO USE FOR DRAK THEME */
-    --colorWeak: var(--whiteGrey);
-    /* Color slightly off form color first used for sidebar  */
-    --colorMinorFirst: var(--midLightGrey);
+    --colorBase: var(--middleGrey);
+    --colorBaseWeak: var(--midLightGrey);
+    --primaryElementColor: var(--darkerGrey);
+    --subPrimeElementColor: var(--midDarkGrey);
+    --secondaryElementColor: var(--darkGrey);
+    --primaryLineColor: var(--nearWhite);
+    --inverseLineColor: var(--nearBlack);
+    --onBaseColorPrimary: var(--nearWhite);
+    --onBaseColorSecondary: var(--whiteGrey);
+    --onElementColorPrimary: var(--nearWhite);
+    --onElementColorSecondary: var(--whiteGrey);
+    --primaryUIcolor: var(--nearWhite);
+    --subPrimaryUIColor: var(--whiteGrey);
+    --onUIColorPrimary: var(--nearBlack);
+    --secondaryUIcolor: var(--nearWhite);
+    --subSecondaryUIColor: var(--whiteGrey);
+    --onUIColorSecondary: var(--nearBlack);
 }
 
 body.theme-night {
-    /* Color used for background formerly d3d3d3*/
     --colorBase: var(--nearBlack);
-    /* Color used for elements and body text*/
-    --colorFirst: var(--darkerGrey);
-    /* Color used for element text*/
-    --colorSecond: var(--middleGrey);
-    /* Color used for outlines */
-    --colorLine: var(--nearWhite);
-    /* STILL CONSIDERING WHAT COLOR TO USE FOR DRAK THEME */
-    --colorWeak: var(--lighterGrey);
-    /* Color slightly off form color first used for sidebar  */
-    --colorMinorFirst: var(--midDarkGrey);
+    --colorBaseWeak: var(--darkGrey);
+    --primaryElementColor: var(--midDarkGrey);
+    --subPrimeElementColor: var(--darkerGrey);
+    --secondaryElementColor: var(--middleGrey);
+    --primaryLineColor: var(--nearWhite);
+    --inverseLineColor: var(--nearBlack);
+    --onBaseColorPrimary: var(--nearWhite);
+    --onBaseColorSecondary: var(--whiteGrey);
+    --onElementColorPrimary: var(--nearWhite);
+    --onElementColorSecondary: var(--whiteGrey);
+    --primaryUIcolor: var(--whiteGrey);
+    --subPrimaryUIColor: var(--lightGrey);
+    --onUIColorPrimary: var(--nearBlack);
+    --secondaryUIcolor: var(--darkGrey);
+    --subSecondaryUIColor: var(--darkerGrey);
+    --onUIColorSecondary: var(--lightGrey);
 }
 
 body,
 main {
     background-color: var(--colorBase);
-    color: var(--colorLine);
+    color: var(--onBaseColorPrimary);
 }
 
 .navbar {
-    background-color: var(--colorFirst);
-    color: var(--colorBase);
+    background-color: var(--primaryElementColor);
+    color: var(--onElementColorPrimary);
     z-index: 10;
     display: flex;
     align-items: center;
@@ -190,8 +224,8 @@ main {
 
 .sidebar,
 .sidebar.left {
-    background-color: var(--colorMinorFirst);
-    color: var(--colorBase);
+    background-color: var(--subPrimeElementColor);
+    color: var(--onElementColorPrimary);
     display: block;
     position: fixed;
     z-index: 5;
@@ -218,8 +252,8 @@ main {
 }
 
 header {
-    background-color: var(--colorFirst);
-    color: var(--colorBase);
+    background-color: var(--primaryElementColor);
+    color: var(--onElementColorPrimary);
 }
 
 .container {
@@ -252,28 +286,45 @@ button.rounded {
 }
 
 button,
+button.primary-color {
+    --btn-bg: var(--primaryUIcolor);
+    --btn-border: var(--subPrimaryUIColor);
+    --btn-text: var(--onUIColorPrimary);
+}
+
+.navbar button,
+.sidebar button,
+header button,
+footer button,
+.block button,
+button.secondary-color {
+    --btn-bg: var(--secondaryUIcolor);
+    --btn-border: var(--subSecondaryUIColor);
+    --btn-text: var(--onUIColorSecondary);
+}
+
 button.white {
     --btn-bg: var(--nearWhite);
     --btn-border: var(--whiteGrey);
-    --btn-text: var(--nearBlack)
+    --btn-text: var(--nearBlack);
 }
 
 button.caution {
     --btn-bg: var(--cautionColor);
     --btn-border: var(--subCautionColor);
-    --btn-text: var(--nearBlack)
+    --btn-text: var(--nearBlack);
 }
 
 button.danger {
     --btn-bg: var(--dangerColor);
     --btn-border: var(--subDangerColor);
-    --btn-text: var(--nearBlack)
+    --btn-text: var(--nearBlack);
 }
 
 button.info {
     --btn-bg: var(--infoColor);
     --btn-border: var(--subInfoColor);
-    --btn-text: var(--nearBlack)
+    --btn-text: var(--nearBlack);
 }
 
 button.success {
@@ -321,13 +372,23 @@ button.success {
 
 
 input {
-    background-color: var(--nearWhite);
-    color: var(--colorSecond);
-    border-color: var(--colorWeak);
+    background-color: var(--primaryUIcolor);
+    color: var(--secondaryElementColor);
+    border-color: var(--subPrimaryUIColor);
     border-width: 1px;
     border-radius: var(--roundedCorner);
     min-height: 2em;
     /* May move to own cat to add text area */
+}
+
+.navbar input,
+.sidebar input,
+header input,
+footer input,
+.block input {
+    background-color: var(--secondaryUIcolor);
+    border-color: var(--subSecondaryUIColor);
+    color: var(--onUIColorSecondary);
 }
 
 input.bright {
@@ -337,28 +398,33 @@ input.bright {
 input.set-in {
     background-color: inherit;
     color: inherit;
+    border-radius: 0;
     border: 0;
     border-bottom: 1px solid currentColor;
 }
 
+input.set-in::placeholder {
+    color: var(--subPrimaryUIColor);
+}
+
 input:not(.no-hover):not(.set-in):hover,
 input.show-hover:not(.set-in) {
-    border-color: var(--colorLine);
+    border-color: var(--primaryLineColor);
 }
 
 input:not(.no-selected):not(.set-in):focus,
 input:not(.no-selected):not(.set-in):active,
 input.show-selected:not(.set-in) {
     box-shadow: 0 0 0 0.1em #57c9fa;
-    border-color: var(--colorLine);
+    border-color: var(--primaryLineColor);
 }
 
 /* Tables with effect like hover */
 /* Hide and show content with peek and show more  */
 
 .block {
-    background-color: var(--colorFirst);
-    color: var(--colorBase);
+    background-color: var(--primaryElementColor);
+    color: var(--onElementColorPrimary);
     border-radius: 7px;
 }
 
