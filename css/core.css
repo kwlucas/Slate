@@ -1,26 +1,24 @@
 :root {
-    /* Color used for background formerly d3d3d3*/
     --nearWhite: #f5f5f5;
-    /* Color used for elements and body text*/
-    --middleGrey: #696969;
-    /* Color used for element text*/
-    --lighterGrey: #b5b5b5;
-    /* Color used for outlines */
-    --nearBlack: #1e1e1e;
-
     --whiteGrey: #d7d7d7;
-
+    --midLightGrey: #757575;
+    --lighterGrey: #b5b5b5;
+    --middleGrey: #696969;
+    --midDarkGrey: #5C5C5C;
     --darkerGrey: #4f4f4f;
+    --nearBlack: #1e1e1e;
     /* Color used for elements and body text in "darkmode" */
     /* Color used for element text in "darkmode*/
-    
+
     --cautionColor: #FCFC72;
     --subCautionColor: #E3E366;
     --dangerColor: #fd5b58ff;
     --subDangerColor: #E3524F;
-    --infoColor: #3FAEFC;/* #57c9fa; */
+    --infoColor: #3FAEFC;
+    /* #57c9fa; */
     --subInfoColor: #399CE3;
-    --successColor: #3FFC7B; /*#04AA6D; /* #58FC8C */
+    --successColor: #3FFC7B;
+    /*#04AA6D; /* #58FC8C */
     --subSuccessColor: #39E36F;
 
 
@@ -76,9 +74,11 @@ hr {
 html {
     font-size: 16px;
     box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
 
-*{
+* {
     box-sizing: inherit;
 }
 
@@ -105,6 +105,8 @@ body {
     --colorLine: var(--nearBlack);
 
     --colorWeak: var(--whiteGrey);
+    /* Color slightly off form color first used for sidebar  */
+    --colorMinorFirst: var(--midLightGrey);
 }
 
 body.theme-dark {
@@ -118,6 +120,8 @@ body.theme-dark {
     --colorLine: var(--nearWhite);
     /* STILL CONSIDERING WHAT COLOR TO USE FOR DRAK THEME */
     --colorWeak: var(--whiteGrey);
+    /* Color slightly off form color first used for sidebar  */
+    --colorMinorFirst: var(--midLightGrey);
 }
 
 body.theme-night {
@@ -131,6 +135,8 @@ body.theme-night {
     --colorLine: var(--nearWhite);
     /* STILL CONSIDERING WHAT COLOR TO USE FOR DRAK THEME */
     --colorWeak: var(--lighterGrey);
+    /* Color slightly off form color first used for sidebar  */
+    --colorMinorFirst: var(--midDarkGrey);
 }
 
 body,
@@ -182,22 +188,9 @@ main {
     justify-content: flex-end;
 }
 
-header {
-    background-color: var(--colorFirst);
-    color: var(--colorBase);
-}
-
-.container {
-    display: flex;
-    align-items: center;
-}
-
-.container:not(.no-auto-space) > *{
-    margin: 0 calc(0.5rem - 1px);
-}
-
-.sidebar, .sidebar.left {
-    background-color: var(--colorFirst);
+.sidebar,
+.sidebar.left {
+    background-color: var(--colorMinorFirst);
     color: var(--colorBase);
     display: block;
     position: fixed;
@@ -216,12 +209,26 @@ header {
     height: 100%;
 }
 
-.sidebar ~ main {
+.sidebar~main {
     margin-left: calc(var(--sidebar-width) + 1rem);
 }
 
-.sidebar.right ~ main {
+.sidebar.right~main {
     margin-right: calc(var(--sidebar-width) + 1rem);
+}
+
+header {
+    background-color: var(--colorFirst);
+    color: var(--colorBase);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container:not(.no-auto-space)>* {
+    margin: 0 calc(0.5rem - 1px);
 }
 
 button {
@@ -244,7 +251,8 @@ button.rounded {
     border-radius: 999px;
 }
 
-button, button.white {
+button,
+button.white {
     --btn-bg: var(--nearWhite);
     --btn-border: var(--whiteGrey);
     --btn-text: var(--nearBlack)
@@ -268,7 +276,7 @@ button.info {
     --btn-text: var(--nearBlack)
 }
 
-button.success{
+button.success {
     --btn-bg: var(--successColor);
     --btn-border: var(--subSuccessColor);
     --btn-text: var(--nearBlack);
