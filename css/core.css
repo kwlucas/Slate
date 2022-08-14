@@ -25,6 +25,8 @@
 
 
     --roundedCorner: 5px;
+
+    --sidebar-width: 12rem;
 }
 
 :focus,
@@ -137,46 +139,52 @@ main {
     color: var(--colorLine);
 }
 
-nav {
+.navbar {
     background-color: var(--colorFirst);
     color: var(--colorBase);
+    z-index: 10;
     display: flex;
     align-items: center;
     min-height: calc(1.5em + 0.75rem + 2px);
 }
 
-nav.seperate,
-nav.push-apart,
+.navbar.seperate,
+.navbar.push-apart,
 .container.seperate,
 .container.push-apart {
     justify-content: space-between;
 }
 
-nav.split,
+.navbar.split,
 .container.split {
     justify-content: space-around;
 }
 
-nav.split-evenly,
+.navbar.split-evenly,
 .container.split-evenly {
     justify-content: space-evenly;
 }
 
-nav.center,
-nav.push-center,
+.navbar.center,
+.navbar.push-center,
 .container.center,
 .container.push-center {
     justify-content: center;
 }
 
-nav.push-start,
+.navbar.push-start,
 .container.push-start {
     justify-content: flex-start;
 }
 
-nav.push-end,
+.navbar.push-end,
 .container.push-end {
     justify-content: flex-end;
+}
+
+header {
+    background-color: var(--colorFirst);
+    color: var(--colorBase);
 }
 
 .container {
@@ -186,6 +194,34 @@ nav.push-end,
 
 .container:not(.no-auto-space) > *{
     margin: 0 calc(0.5rem - 1px);
+}
+
+.sidebar, .sidebar.left {
+    background-color: var(--colorFirst);
+    color: var(--colorBase);
+    display: block;
+    position: fixed;
+    z-index: 5;
+    overflow-x: hidden;
+    height: auto;
+    width: var(--sidebar-width);
+    padding: 1.08rem 1rem;
+}
+
+.sidebar.right {
+    right: 0;
+}
+
+.sidebar.page-length {
+    height: 100%;
+}
+
+.sidebar ~ main {
+    margin-left: calc(var(--sidebar-width) + 1rem);
+}
+
+.sidebar.right ~ main {
+    margin-right: calc(var(--sidebar-width) + 1rem);
 }
 
 button {
