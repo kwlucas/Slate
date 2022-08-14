@@ -9,3 +9,14 @@
 .nudge-display .container {
     padding: 1em;
 }
+
+.navbar {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.sidebar {
+    /* The height of navbar */
+    padding-top: 38px;
+}
