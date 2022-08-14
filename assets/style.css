@@ -5,3 +5,7 @@
 .layout-display .block {
     padding: 0.5rem;
 }
+
+.nudge-display .container {
+    padding: 1em;
+}
