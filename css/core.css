@@ -69,6 +69,16 @@ section {
     display: block;
 }
 
+a {
+    color: inherit;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
 hr {
     padding: 0;
 }
@@ -91,8 +101,63 @@ input {
 
 .container:not(:last-child),
 .block:not(:last-child) {
-    margin-bottom: 0.33rem;
+    margin-bottom: calc(0.33rem);
 }
+
+.tree a,
+nav.sidebar a {
+    text-decoration: none;
+    
+}
+
+.tree *,
+nav.sidebar:not(no-format) * {
+    --treePadding: 0.25rem;
+    padding: var(--treePadding);
+    
+}
+
+.tree:first-child,
+.tree>ul+a,
+.tree>ul+p,
+.tree>ul+i,
+nav.sidebar>ul:not(.no-format)+a,
+nav.sidebar>ul:not(.no-format)+p,
+nav.sidebar>ul:not(.no-format)+i,
+nav.sidebar>a:first-of-type,
+nav.sidebar>p:first-of-type,
+nav.sidebar>i:first-of-type{
+    font-weight: 600;
+    border-radius: var(--roundedCorner);
+}
+
+.tree>ul>li,
+.tree.left>ul>li,
+nav.sidebar>ul:not(.no-format)>li,
+nav.sidebar.left>ul:not(.no-format)>li {
+    font-weight: normal;
+    border-radius: var(--roundedCorner);
+    background-color: unset;
+    padding-left: calc(0.33rem + var(--treePadding));
+}
+
+.tree.right>ul>li,
+nav.sidebar.right>ul:not(.no-format)>li {
+    padding-left: unset;
+    padding-right: calc(0.33rem + var(--treePadding));
+}
+
+.tree>ul>li:hover,
+nav.sidebar>ul:not(.no-format)>li:hover {
+    background-color: var(--primaryElementColor);
+}
+
+.tree .selected,
+nav.sidebar .selected {
+    background-color: var(--infoColor);
+}
+
+
 
 /* Color Themes  */
 
@@ -178,6 +243,11 @@ main {
     background-color: var(--colorBase);
     color: var(--onBaseColorPrimary);
 }
+
+.hidden {
+    display: none;
+}
+
 
 .navbar {
     background-color: var(--primaryElementColor);
@@ -283,6 +353,20 @@ button.show-hover:not(.no-hover) {
 
 button.rounded {
     border-radius: 999px;
+}
+
+/* Text buttons */
+a.button,
+p.button,
+i.button,
+strong.button,
+span.button {
+    border-radius: var(--roundedCorner);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--primaryElementColor);
 }
 
 button,
