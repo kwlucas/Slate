@@ -184,7 +184,7 @@ nav.push-end,
     align-items: center;
 }
 
-.container > *{
+.container:not(.no-auto-space) > *{
     margin: 0 calc(0.5rem - 1px);
 }
 
@@ -316,6 +316,11 @@ input.show-selected:not(.set-in) {
     background-color: var(--colorFirst);
     color: var(--colorBase);
     border-radius: 7px;
+}
+
+.block.white {
+    background-color: var(--nearWhite);
+    color: var(--nearBlack);
 }
 
 .code {
