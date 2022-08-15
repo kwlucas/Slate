@@ -131,6 +131,20 @@ nav.sidebar>i:first-of-type{
     border-radius: var(--roundedCorner);
 }
 
+.tree:first-child::after,
+.tree>ul+a::after,
+.tree>ul+p::after,
+.tree>ul+i::after,
+nav.sidebar>ul:not(.no-format)+a::after,
+nav.sidebar>ul:not(.no-format)+p::after,
+nav.sidebar>ul:not(.no-format)+i::after,
+nav.sidebar>a:first-of-type::after,
+nav.sidebar>p:first-of-type::after,
+nav.sidebar>i:first-of-type::after{
+    content: "\a";
+    white-space: pre;
+}
+
 .tree>ul>li,
 .tree.left>ul>li,
 nav.sidebar>ul:not(.no-format)>li,
@@ -213,9 +227,9 @@ body.theme-dark {
     --primaryUIcolor: var(--nearWhite);
     --subPrimaryUIColor: var(--whiteGrey);
     --onUIColorPrimary: var(--nearBlack);
-    --secondaryUIcolor: var(--nearWhite);
-    --subSecondaryUIColor: var(--whiteGrey);
-    --onUIColorSecondary: var(--nearBlack);
+    --secondaryUIcolor: var(--middleGrey);
+    --subSecondaryUIColor: var(--midLightGrey);
+    --onUIColorSecondary: var(--nearWhite);
 }
 
 body.theme-night {
@@ -335,6 +349,7 @@ header {
     margin: 0 calc(0.5rem - 1px);
 }
 
+.button,
 button {
     background-color: var(--btn-bg);
     border-color: var(--btn-border);
@@ -353,16 +368,6 @@ button.show-hover:not(.no-hover) {
 
 button.rounded {
     border-radius: 999px;
-}
-
-/* Text buttons */
-a.button,
-p.button,
-i.button,
-strong.button,
-span.button {
-    border-radius: var(--roundedCorner);
-    cursor: pointer;
 }
 
 .button:hover {
