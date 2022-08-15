@@ -12,7 +12,7 @@ function changeTheme(theme) {
 
 function toggleList(event){
     let togBtn = event.target;
-    togBtn.classList.toggle('selected');
+    //togBtn.classList.toggle('selected');
     let sibling = togBtn.nextSibling;
     while(sibling && sibling.nodeType != 1) {
         sibling = sibling.nextSibling;
