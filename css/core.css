@@ -844,65 +844,198 @@ body.format-sections section:not(.no-format)>.row {
 /* Slate Nudge */
 .nudge,
 .nudge-1 {
-    margin: calc(0.33em - 1px);
+    margin: calc(0.33rem - 1px);
+}
+
+.nudge-horizontal,
+.nudge-horizontal-1 {
+    margin-right: calc(0.33rem - 1px);
+    margin-left: calc(0.33rem - 1px);
+}
+
+.nudge-vertical,
+.nudge-vertical-1 {
+    margin-top: calc(0.33rem - 1px);
+    margin-bottom: calc(0.33rem - 1px);
 }
 
 .nudge-left,
 .nudge-left-1 {
-    margin-right: calc(0.33em - 1px);
+    margin-right: calc(0.33rem - 1px);
 }
 
 .nudge-up,
 .nudge-up-1 {
-    margin-bottom: calc(0.33em - 1px);
+    margin-bottom: calc(0.33rem - 1px);
 }
 
 .nudge-right,
 .nudge-right-1 {
-    margin-left: calc(0.33em - 1px);
+    margin-left: calc(0.33rem - 1px);
 }
 
 .nudge-down,
 .nudge-down-1 {
-    margin-top: calc(0.33em - 1px);
+    margin-top: calc(0.33rem - 1px);
 }
 
 .nudge-2 {
-    margin: calc(0.66em - 1px);
+    margin: calc(0.66rem - 1px);
+}
+
+.nudge-horizontal-2 {
+    margin-right: calc(0.66rem - 1px);
+    margin-left: calc(0.66rem - 1px);
+}
+
+.nudge-vertical-2 {
+    margin-top: calc(0.66rem - 1px);
+    margin-bottom: calc(0.66rem - 1px);
 }
 
 .nudge-left-2 {
-    margin-right: calc(0.66em - 1px);
+    margin-right: calc(0.66rem - 1px);
 }
 
 .nudge-up-2 {
-    margin-bottom: calc(0.66em - 1px);
+    margin-bottom: calc(0.66rem - 1px);
 }
 
 .nudge-right-2 {
-    margin-left: calc(0.66em - 1px);
+    margin-left: calc(0.66rem - 1px);
 }
 
 .nudge-down-2 {
-    margin-top: calc(0.66em - 1px);
+    margin-top: calc(0.66rem - 1px);
 }
 
 .nudge-3 {
-    margin: calc(1em - 1px);
+    margin: calc(1rem - 1px);
+}
+
+.nudge-horizontal-3 {
+    margin-right: calc(1rem - 1px);
+    margin-left: calc(1rem - 1px);
+}
+
+.nudge-vertical-3 {
+    margin-top: calc(1rem - 1px);
+    margin-bottom: calc(1rem - 1px);
 }
 
 .nudge-left-3 {
-    margin-right: calc(1em - 1px);
+    margin-right: calc(1rem - 1px);
 }
 
 .nudge-up-3 {
-    margin-bottom: calc(1em - 1px);
+    margin-bottom: calc(1rem - 1px);
 }
 
 .nudge-right-3 {
-    margin-left: calc(1em - 1px);
+    margin-left: calc(1rem - 1px);
 }
 
 .nudge-down-3 {
-    margin-top: calc(1em - 1px);
+    margin-top: calc(1rem - 1px);
+}
+
+
+
+
+
+.elements-nudge>*,
+.elements-nudge-1>* {
+    margin: calc(0.33rem - 1px);
+}
+
+.elements-nudge-horizontal>*,
+.elements-nudge-horizontal-1>* {
+    margin-right: calc(0.33rem - 1px);
+    margin-left: calc(0.33rem - 1px);
+}
+
+.elements-nudge-vertical>*,
+.elements-nudge-vertical-1>* {
+    margin-top: calc(0.33rem - 1px);
+    margin-bottom: calc(0.33rem - 1px);
+}
+
+.elements-nudge-left>*,
+.elements-nudge-left-1>* {
+    margin-right: calc(0.33rem - 1px);
+}
+
+.elements-nudge-up>*,
+.elements-nudge-up-1>* {
+    margin-bottom: calc(0.33rem - 1px);
+}
+
+.elements-nudge-right>*,
+.elements-nudge-right-1>* {
+    margin-left: calc(0.33rem - 1px);
+}
+
+.elements-nudge-down>*,
+.elements-nudge-down-1>* {
+    margin-top: calc(0.33rem - 1px);
+}
+
+.elements-nudge-2>* {
+    margin: calc(0.66rem - 1px);
+}
+
+.elements-nudge-horizontal-2>* {
+    margin-right: calc(0.66rem - 1px);
+    margin-left: calc(0.66rem - 1px);
+}
+
+.elements-nudge-vertical-2>* {
+    margin-top: calc(0.66rem - 1px);
+    margin-bottom: calc(0.66rem - 1px);
+}
+
+.elements-nudge-left-2>* {
+    margin-right: calc(0.66rem - 1px);
+}
+
+.elements-nudge-up-2>* {
+    margin-bottom: calc(0.66rem - 1px);
+}
+
+.elements-nudge-right-2>* {
+    margin-left: calc(0.66rem - 1px);
+}
+
+.elements-nudge-down-2>* {
+    margin-top: calc(0.66rem - 1px);
+}
+
+.elements-nudge-3>* {
+    margin: calc(1rem - 1px);
+}
+
+.elements-nudge-horizontal-3>* {
+    margin-right: calc(1rem - 1px);
+    margin-left: calc(1rem - 1px);
+}
+
+.elements-nudge-vertical-3>* {
+    margin-top: calc(1rem - 1px);
+    margin-bottom: calc(1rem - 1px);
+}
+
+.elements-nudge-left-3>* {
+    margin-right: calc(1rem - 1px);
+}
+
+.elements-nudge-up-3>* {
+    margin-bottom: calc(1rem - 1px);
+}
+
+.elements-nudge-right-3>* {
+    margin-left: calc(1rem - 1px);
+}
+
+.elements-nudge-down-3>* {
+    margin-top: calc(1rem - 1px);
 }
