@@ -105,6 +105,18 @@ input {
     margin-bottom: 0.33rem;
 }
 
+.row .stack:last-child,
+.row .container:last-child,
+.row .block:last-child,
+.slate-section .stack:last-child,
+.slate-section .container:last-child,
+.slate-section .block:last-child,
+body.format-sections section:not(.no-format) .stack:last-child,
+body.format-sections section:not(.no-format) .container:last-child,
+body.format-sections section:not(.no-format) .block:last-child {
+    margin-bottom: 0.33rem;
+}
+
 .tree a,
 nav.sidebar a {
     text-decoration: none;
@@ -540,6 +552,19 @@ input.show-selected:not(.set-in) {
     border-radius: var(--roundedCorner);
 }
 
+.block.fill {
+    height: 100%;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+}
+
+.center-elements {
+    align-items: center;
+    justify-content: center;
+}
 /* text and inner element control */
 
 .center-text {
@@ -571,6 +596,8 @@ body.format-sections section:not(.no-format) .row {
 
 }
 
+.row>.format-all-elements>*:not(.no-format),
+.slate-section.format-all-elements>*:not(.no-format),
 .row>div,
 .row>.spread-auto,
 .slate-section>div,
