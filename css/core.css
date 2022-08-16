@@ -45,7 +45,6 @@ blockquote,
 textarea,
 pre,
 iframe,
-hr,
 h1,
 h2,
 h3,
@@ -81,6 +80,7 @@ ul {
 
 hr {
     padding: 0;
+    margin: 0.33rem 0;
 }
 
 html {
@@ -99,9 +99,10 @@ input {
     font-family: Helvetica, Arial, Verdana, sans-serif;
 }
 
+.stack:not(:last-child),
 .container:not(:last-child),
 .block:not(:last-child) {
-    margin-bottom: calc(0.33rem);
+    margin-bottom: 0.33rem;
 }
 
 .tree a,
@@ -510,6 +511,15 @@ input.show-selected:not(.set-in) {
 
 /* Tables with effect like hover */
 /* Hide and show content with peek and show more  */
+
+.stack {
+    display: flex;
+}
+
+.stack.center {
+    margin-left: 0.33rem;
+    margin-right: 0.33rem;
+}
 
 .block {
     background-color: var(--primaryElementColor);
