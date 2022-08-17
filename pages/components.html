@@ -51,13 +51,97 @@
     </nav>
     <main>
         <section id="boxes" class="">
-            <h3 id="boxes">Boxes</h3>
-            <p>Currently the box class is being used as the block class and vice versa. Boxes will be simple rectangular containers to put elements in.</p>
-            <div class="block"></div>
+            <h3>Boxes</h3>
+            <p>Currently the box class is being used as the block class and vice versa. Boxes will be simple rectangular
+                containers to put elements in.</p>
+            <div class="block">
+                <code>class="block"</code>
+                <p>Soon to be changed to "box"</p>
+            </div>
+            <div class="block center-text">
+                <code>class="block center-text"</code>
+                <p>Like many container elements in slate, the "center-text" class can be used to center text elements
+                    within the box.</p>
+            </div>
+            <div class="block fit-content">
+                <code>class="block fit-content"</code>
+                <p>Adding the "fit-content" class will re-size the box so that it is only as wide as needed to fit the
+                    content.</p>
+            </div>
+            <div class="block fit-content center-text">
+                <code>class="block fit-content center-text"</code>
+                <p>Here it is all together.</p>
+            </div>
         </section>
-        <section id="blocks" class=""></section>
-        <section id="buttons" class=""></section>
-        <section id="trees" class=""></section>
+        <section id="blocks" class="">
+            <h3>Blocks</h3>
+            <p>Currently the block class is being used as the box class and vice versa. When complete blocks will be
+                similar to boxes except with flex-box capabilities</p>
+        </section>
+        <section id="buttons" class="">
+            <h3>Buttons</h3>
+            <div>
+                <div>Rounded Button</div>
+                <button class="rounded">Rounded</button>
+            </div>
+            <div>
+                <div>No Hover Effect</div>
+                <button class="no-hover">No Hover</button>
+            </div>
+            <div>
+                <div>Colors</div>
+                <div class="container">
+                    <button class="caution">Caution</button>
+                    <button class="danger">Danger</button>
+                    <button class="info">Info</button>
+                    <button class="success">Success</button>
+                </div>
+            </div>
+            <p>Button Strips</p>
+            <div class="container">
+                <div class="button-strip">
+                    <button>Button 1</button>
+                    <button>Button 2</button>
+                    <button>Button 3</button>
+                    <button>Button 4</button>
+                </div>
+                <div class="button-strip rounded">
+                    <button>Button 1</button>
+                    <button>Button 2</button>
+                    <button>Button 3</button>
+                </div>
+                <div class="button-strip">
+                    <button class="caution">Caution</button>
+                    <button class="danger">Danger</button>
+                    <button class="info">Info</button>
+                    <button class="success">Success</button>
+                </div>
+            </div>
+        </section>
+        <section id="trees" class="">
+            <h3>Trees</h3>
+            <p>Trees are a hierarchial list component. Like everything else tree lists are WIP</p>
+            <div class="tree secondary-color block fit-content">
+                <p class="">Label 1</p>
+                <ul class="">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <ul class="">
+                        <li>Nested Item 1</li>
+                        <li>Nested Item 2</li>
+                        <li>Nested Item 3</li>
+                    </ul>
+                    <li>Item 3</li>
+                    <li>Item 4</li>
+                </ul>
+                <p class="">Label 2</p>
+                <ul class="">
+                    <li>Item 1</li>
+                    <li>Item 2</li>
+                    <li>Item 3</li>
+                </ul>
+            </div>
+        </section>
     </main>
     <footer>
     </footer>
