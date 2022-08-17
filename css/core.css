@@ -130,7 +130,7 @@ nav.sidebar:not(no-format) * {
     
 }
 
-.tree:first-child,
+.tree>:first-child,
 .tree>ul+a,
 .tree>ul+p,
 .tree>ul+i,
@@ -144,7 +144,7 @@ nav.sidebar>i:first-of-type{
     border-radius: var(--roundedCorner);
 }
 
-.tree:first-child::after,
+.tree>:first-child::after,
 .tree>ul+a::after,
 .tree>ul+p::after,
 .tree>ul+i::after,
@@ -177,6 +177,29 @@ nav.sidebar.right>ul:not(.no-format)>li {
 .tree>ul>li:hover,
 nav.sidebar>ul:not(.no-format)>li:hover {
     background-color: var(--primaryElementColor);
+}
+
+.tree>ul>li+ul>li,
+.tree.left>ul>li+ul>li,
+nav.sidebar>ul:not(.no-format)>li+ul:not(.no-format)>li,
+nav.sidebar.left>ul:not(.no-format)>li+ul:not(.no-format)>li {
+    font-weight: normal;
+    border-radius: var(--roundedCorner);
+    background-color: unset;
+    padding-left: calc(0.33rem + 0.33rem + var(--treePadding));
+}
+
+.tree.right>ul>li+ul>li,
+nav.sidebar.right>ul:not(.no-format)>li+ul:not(.no-format)>li {
+    padding-left: unset;
+    padding-right: calc(0.33rem + 0.33rem + var(--treePadding));
+}
+
+.tree>ul>li+ul>li:hover,
+nav.sidebar>ul:not(.no-format)>li+ul:not(.no-format)>li:hover,
+.tree.secondary-color>ul>li:hover,
+nav.sidebar.secondary-color>ul:not(.no-format)>li:hover {
+    background-color: var(--secondaryElementColor);
 }
 
 .tree .selected,
@@ -537,6 +560,11 @@ input.show-selected:not(.set-in) {
     background-color: var(--primaryElementColor);
     color: var(--onElementColorPrimary);
     border-radius: 7px;
+    padding: 0.33rem;
+}
+
+.block.fit-content {
+    width: fit-content;
 }
 
 .block.white {
