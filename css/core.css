@@ -2,7 +2,8 @@
     --nearWhite: #f5f5f5;
     --whiteGrey: #d7d7d7;
     --lightGrey: #C2C2C2;
-    --lighterGrey: #828282;/*b5b5b5*/
+    --lighterGrey: #828282;
+    /*b5b5b5*/
     --midLightGrey: #757575;
     --middleGrey: #696969;
     --midDarkGrey: #5C5C5C;
@@ -99,6 +100,7 @@ input {
     font-family: Helvetica, Arial, Verdana, sans-serif;
 }
 
+progress,
 .stack:not(:last-child),
 .container:not(:last-child),
 .block:not(:last-child) {
@@ -120,14 +122,14 @@ body.format-sections section:not(.no-format) .block:last-child {
 .tree a,
 nav.sidebar a {
     text-decoration: none;
-    
+
 }
 
 .tree *,
 nav.sidebar:not(no-format) * {
     --treePadding: 0.25rem;
     padding: var(--treePadding);
-    
+
 }
 
 .tree>:first-child,
@@ -139,7 +141,7 @@ nav.sidebar>ul:not(.no-format)+p,
 nav.sidebar>ul:not(.no-format)+i,
 nav.sidebar>a:first-of-type,
 nav.sidebar>p:first-of-type,
-nav.sidebar>i:first-of-type{
+nav.sidebar>i:first-of-type {
     font-weight: 600;
     border-radius: var(--roundedCorner);
 }
@@ -153,7 +155,7 @@ nav.sidebar>ul:not(.no-format)+p::after,
 nav.sidebar>ul:not(.no-format)+i::after,
 nav.sidebar>a:first-of-type::after,
 nav.sidebar>p:first-of-type::after,
-nav.sidebar>i:first-of-type::after{
+nav.sidebar>i:first-of-type::after {
     content: "\a";
     white-space: pre;
 }
@@ -383,6 +385,56 @@ header {
 
 .container:not(.no-auto-space)>* {
     margin: 0 calc(0.5rem - 1px);
+}
+
+progress {
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    height: 1rem;
+    overflow: hidden;
+    display: block;
+    border: none;
+    border-radius: var(--roundedCorner);
+    width: 100%;
+}
+
+progress::-webkit-progress-bar {
+    background-color: var(--colorBaseWeak);
+}
+
+progress {
+    background-color: var(--progress-fill) !important;
+}
+
+progress::-ms-fill {
+    background-color: var(--progress-fill) !important;
+}
+
+progress::-moz-progress-bar {
+    background-color: var(--progress-fill) !important;
+}
+
+progress::-webkit-progress-value {
+    background-color: var(--progress-fill) !important;
+}
+
+
+
+progress.info,
+progress {
+    --progress-fill: var(--infoColor);
+}
+
+progress.caution {
+    --progress-fill: var(--cautionColor);
+}
+
+progress.danger {
+    --progress-fill: var(--dangerColor);
+}
+
+progress.success {
+    --progress-fill: var(--successColor);
 }
 
 .button,
@@ -618,6 +670,7 @@ input.show-selected:not(.set-in) {
     align-items: center;
     justify-content: center;
 }
+
 /* text and inner element control */
 
 .center-text {
@@ -949,22 +1002,22 @@ body.format-sections section:not(.no-format)>.row {
 
 .set-per-row-11.format-all-elements>*:not(.no-format),
 .set-per-row-11>div:not(.no-format),
-.set-per-row-11>section:not(.no-format){
-    width:9.0909%;
+.set-per-row-11>section:not(.no-format) {
+    width: 9.0909%;
     flex: none;
 }
 
 .set-per-row-9.format-all-elements>*:not(.no-format),
 .set-per-row-9>div:not(.no-format),
-.set-per-row-9>section:not(.no-format){
-    width:11.1111%;
+.set-per-row-9>section:not(.no-format) {
+    width: 11.1111%;
     flex: none;
 }
 
 .set-per-row-7.format-all-elements>*:not(.no-format),
 .set-per-row-7>div:not(.no-format),
-.set-per-row-7>section:not(.no-format){
-    width:14.2857%;
+.set-per-row-7>section:not(.no-format) {
+    width: 14.2857%;
     flex: none;
 }
 
