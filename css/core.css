@@ -363,7 +363,7 @@ main {
     height: 100%;
 }
 
-.sidebar~main {
+.sidebar:not(.right)~main {
     margin-left: calc(var(--sidebar-width) + 1rem);
 }
 
