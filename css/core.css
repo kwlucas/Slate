@@ -557,8 +557,8 @@ input.show-selected:not(.set-in) {
 }
 
 .block {
-    background-color: var(--primaryElementColor);
-    color: var(--onElementColorPrimary);
+    background-color: var(--block-bg);
+    color: var(--block-text);
     border-radius: 7px;
     padding: 0.33rem;
 }
@@ -567,9 +567,34 @@ input.show-selected:not(.set-in) {
     width: fit-content;
 }
 
+.block {
+    --block-bg: var(--primaryElementColor);
+    --block-text: var(--onElementColorPrimary);
+}
+
 .block.white {
-    background-color: var(--nearWhite);
-    color: var(--nearBlack);
+    --block-bg: var(--nearWhite);
+    --block-text: var(--nearBlack);
+}
+
+.block.caution {
+    --block-bg: var(--cautionColor);
+    --block-text: var(--nearBlack);
+}
+
+.block.danger {
+    --block-bg: var(--dangerColor);
+    --block-text: var(--nearBlack);
+}
+
+.block.info {
+    --block-bg: var(--infoColor);
+    --block-text: var(--nearBlack);
+}
+
+.block.success {
+    --block-bg: var(--successColor);
+    --block-text: var(--nearBlack);
 }
 
 .code {
