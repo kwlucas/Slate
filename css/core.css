@@ -84,6 +84,36 @@ hr {
     margin: 0.33rem 0;
 }
 
+hr.solid {
+    border-bottom: unset;
+    border-right: unset;
+    border-left: unset;
+    border-top: 1px solid;
+}
+
+hr.dotted {
+    border-bottom: unset;
+    border-right: unset;
+    border-left: unset;
+    border-top: 1px dotted;
+}
+
+hr.dashed {
+    border-bottom: unset;
+    border-right: unset;
+    border-left: unset;
+    border-top: 1px dashed;
+}
+
+hr.bold-1,
+hr.bold {
+    border-width: 1.5px;
+}
+
+hr.bold-2 {
+    border-width: 2px;
+}
+
 html {
     font-size: 16px;
     box-sizing: border-box;
