@@ -308,6 +308,8 @@ main {
     display: flex;
     align-items: center;
     min-height: calc(1.5em + 0.75rem + 2px);
+
+    padding: 0 0.33rem;
 }
 
 .navbar.seperate,
