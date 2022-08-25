@@ -365,6 +365,12 @@ main {
     height: 100%;
 }
 
+.sidebar.page-length.absolute {
+    position: absolute !important;
+    min-height: 100%;
+    height: fit-content !important;
+}
+
 .sidebar:not(.right)~main {
     margin-left: calc(var(--sidebar-width) + 1rem);
 }
@@ -398,6 +404,7 @@ progress {
     width: 100%;
 }
 
+/* Color of not filled in */
 progress::-webkit-progress-bar {
     background-color: var(--colorBaseWeak);
 }
