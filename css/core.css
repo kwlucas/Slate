@@ -243,7 +243,8 @@ nav.sidebar .selected {
 
 /* Color Themes  */
 
-body {
+body,
+body.theme-light {
     /* Color used for background formerly d3d3d3*/
     --colorBase: var(--nearWhite);
     /* Color slightly off from base color */
@@ -425,7 +426,7 @@ header {
     margin: 0 calc(0.5rem - 1px);
 }
 
-progress {
+progress:not(.no-format) {
     -moz-appearance: none;
     -webkit-appearance: none;
     height: 1rem;
@@ -436,28 +437,82 @@ progress {
     width: 100%;
 }
 
+progress:not(.no-format).rounded {
+    border-radius: 999px;
+}
+
 /* Color of not filled in */
 progress::-webkit-progress-bar {
     background-color: var(--colorBaseWeak);
 }
 
 progress {
-    background-color: var(--progress-fill) !important;
+    background-color: var(--progress-fill);
 }
 
 progress::-ms-fill {
-    background-color: var(--progress-fill) !important;
+    background-color: var(--progress-fill);
 }
 
 progress::-moz-progress-bar {
-    background-color: var(--progress-fill) !important;
+    background-color: var(--progress-fill);
 }
 
 progress::-webkit-progress-value {
-    background-color: var(--progress-fill) !important;
+    background-color: var(--progress-fill);
 }
 
+progress:indeterminate {
+    background-color: var(--colorBaseWeak);
+    /* linear-gradient(90deg, rgba(215, 215, 215, 0) 0%, var(--progress-fill) 25%, rgba(215, 215, 215, 0) 50%, var(--progress-fill) 100%); */
+    /* linear-gradient(90deg, rgba(215, 215, 215, 0) 20%, var(--progress-fill) 50%, rgba(215, 215, 215, 0) 80%); */
+    /* linear-gradient(90deg, var(--progress-fill) 10%, rgba(215, 215, 215, 0) 50%, var(--progress-fill) 90%); */
+    background-image: linear-gradient(90deg, rgba(215, 215, 215, 0) 25%, var(--progress-fill) 50%, rgba(215, 215, 215, 0) 75%);
+    background-size: 150% 200%;
+    background-position: 150% 50%;
+    background-repeat: no-repeat;
 
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 2.0s;
+    animation-duration: 2.0s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: progressIndeterminate;
+    animation-name: progressIndeterminate;
+    -webkit-animation-direction: normal;
+    animation-direction: normal;
+    -webkit-animation-timing-function:linear;
+    animation-timing-function:linear;
+}
+
+progress.bounce:indeterminate{
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
+    -webkit-animation-duration: 2.0s;
+    animation-duration: 2.0s;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: progressIndeterminateBounce;
+    animation-name: progressIndeterminateBounce;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+    -webkit-animation-timing-function:ease-in-out;
+    animation-timing-function:ease-in-out;
+}
+
+progress:indeterminate::-webkit-progress-bar {
+    background-color: transparent;
+}
+
+progress:indeterminate::-moz-progress-bar {
+    background-color: transparent;
+}
+
+progress:indeterminate::-ms-fill {
+    animation-name: none;
+    background-color: transparent;
+}
 
 progress.info,
 progress {
@@ -475,6 +530,47 @@ progress.danger {
 progress.success {
     --progress-fill: var(--successColor);
 }
+
+@-webkit-keyframes progressIndeterminateBounce {
+    0% {
+        background-position: 150% 50%;
+    }
+
+    100% {
+        background-position: -50% 50%;
+    }
+}
+
+@keyframes progressIndeterminateBounce {
+    0% {
+        background-position: 150% 50%;
+    }
+
+    100% {
+        background-position: -50% 50%;
+    }
+}
+
+@-webkit-keyframes progressIndeterminate {
+    0% {
+        background-position: 220% 50%;
+    }
+
+    100% {
+        background-position: -120% 50%;
+    }
+}
+
+@keyframes progressIndeterminate {
+    0% {
+        background-position: 220% 50%;
+    }
+
+    100% {
+        background-position: -120% 50%;
+    }
+}
+
 
 .button,
 button {
