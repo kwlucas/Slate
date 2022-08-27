@@ -472,8 +472,8 @@ progress:indeterminate {
     background-position: 150% 50%;
     background-repeat: no-repeat;
 
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+    /* -webkit-animation-delay: 1s;
+    animation-delay: 1s; */
     -webkit-animation-duration: 2.0s;
     animation-duration: 2.0s;
     -webkit-animation-iteration-count: infinite;
@@ -487,8 +487,8 @@ progress:indeterminate {
 }
 
 progress.bounce:indeterminate{
-    -webkit-animation-delay: 1s;
-    animation-delay: 1s;
+    /* -webkit-animation-delay: 1s;
+    animation-delay: 1s; */
     -webkit-animation-duration: 2.0s;
     animation-duration: 2.0s;
     -webkit-animation-iteration-count: infinite;
