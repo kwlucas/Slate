@@ -806,6 +806,23 @@ input.show-selected:not(.set-in) {
     border-radius: var(--roundedCorner);
     color: var(--onBaseColorPrimary);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    max-width: 100%;
+}
+
+.card>*{
+    padding: 0.66rem;
+}
+
+.card>.header {
+    background-color: transparent;
+}
+
+.card>.body {
+    background-color: transparent;
+}
+
+.card>.footer {
+    background-color: transparent;
 }
 
 .center-elements {
