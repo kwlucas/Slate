@@ -758,10 +758,6 @@ input.show-selected:not(.set-in) {
     padding: 0.33rem;
 }
 
-.block.fit-content {
-    width: fit-content;
-}
-
 .block {
     --block-bg: var(--primaryElementColor);
     --block-text: var(--onElementColorPrimary);
@@ -823,6 +819,10 @@ input.show-selected:not(.set-in) {
 
 .card>.footer {
     background-color: transparent;
+}
+
+.fit-content {
+    width: fit-content;
 }
 
 .center-elements {
