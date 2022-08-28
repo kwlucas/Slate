@@ -15,6 +15,9 @@
     position: -webkit-sticky;
     top: 0;
 }
+main {
+    margin-right: 0.33rem;
+}
 
 .sidebar {
     /* The height of navbar + normal padding */
