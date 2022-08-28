@@ -734,6 +734,14 @@ input.show-selected:not(.set-in) {
 /* Tables with effect like hover */
 /* Hide and show content with peek and show more  */
 
+.code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.code-block {
+    border-radius: var(--roundedCorner);
+}
+
 .stack {
     display: flex;
 }
@@ -784,14 +792,6 @@ input.show-selected:not(.set-in) {
     --block-text: var(--nearBlack);
 }
 
-.code {
-    font-family: 'Courier New', Courier, monospace;
-}
-
-.code-block {
-    border-radius: var(--roundedCorner);
-}
-
 .block.fill {
     height: 100%;
     width: 100%;
@@ -799,6 +799,13 @@ input.show-selected:not(.set-in) {
 
 .box {
     display: flex;
+}
+
+.card {
+    background-color: var(--colorBase);
+    border-radius: var(--roundedCorner);
+    color: var(--onBaseColorPrimary);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .center-elements {
