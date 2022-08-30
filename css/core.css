@@ -805,8 +805,8 @@ input.show-selected:not(.set-in) {
     max-width: 100%;
 }
 
-.card>*:not(.flip){
-    padding: 0.66rem;
+.card div{
+    padding: 0.33rem;
 }
 
 .card>.header {
@@ -837,28 +837,16 @@ input.show-selected:not(.set-in) {
     background-color: transparent;
 }
 
-.card:not(.no-hover):hover {
+.card:not(.no-hover, .flip):hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 16px;
 }
 
-.card.flip-container,
-.card.flip-container-hover {
-    background-color: transparent !important;
-    box-shadow: none !important;
-}
-
-.card.flip-container>.flip,
-.card.flip-container-hover>.flip {
-    background-color: var(--colorBase);
-    border-radius: var(--roundedCorner);
-    color: var(--onBaseColorPrimary);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.card.flip>:not(.front, .back) {
+    visibility: hidden;
 }
 
 .flip-container>.flip {
     position: relative;
-    width: 100%;
-    height: 100%;
     perspective: 1000px;
     transition: transform 0.7s;
     transform-style: preserve-3d;
