@@ -813,12 +813,32 @@ input.show-selected:not(.set-in) {
     background-color: transparent;
 }
 
-.card>.body {
+.card>.header:first-child,
+.card>img:first-child,
+.card>.content:first-child,
+.card>.footer:first-child {
+    border-top-left-radius: var(--roundedCorner);
+    border-top-right-radius: var(--roundedCorner);
+}
+
+.card>.header:last-child,
+.card>img:last-child,
+.card>.content:last-child,
+.card>.footer:last-child {
+    border-bottom-left-radius: var(--roundedCorner);
+    border-bottom-right-radius: var(--roundedCorner);
+}
+
+.card>.content {
     background-color: transparent;
 }
 
 .card>.footer {
     background-color: transparent;
+}
+
+.card:not(.no-hover):hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 16px;
 }
 
 .fit-content {
