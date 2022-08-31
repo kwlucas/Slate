@@ -804,7 +804,7 @@ input.show-selected:not(.set-in) {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     max-width: 100%;
 
-    --card-spacing: 0.33rem;
+    --card-spacing: 0.66rem;
 }
 
 .card.flip>.front>.header:first-child,
@@ -839,7 +839,7 @@ input.show-selected:not(.set-in) {
     border-bottom-right-radius: var(--roundedCorner);
 }
 
-.card.flip>.front>.header:not(:last-child),
+/* .card.flip>.front>.header:not(:last-child),
 .card.flip>.front>img:not(:last-child),
 .card.flip>.front>.body:not(:last-child),
 .card.flip>.front>.footer:not(:last-child),
@@ -851,28 +851,25 @@ input.show-selected:not(.set-in) {
 .card>img:not(:last-child),
 .card>.body:not(:last-child),
 .card>.footer:not(:last-child){
-    margin-bottom: 0.66rem;
-}
+    padding-bottom: 0.66rem;
+} */
 
 .card.flip>.front>.header,
 .card.flip>.back>.header,
 .card>.header {
-    margin-left: var(--card-spacing);
-    margin-right: var(--card-spacing);
+    padding: calc(var(--card-spacing) / 2) var(--card-spacing);
 }
 
 .card.flip>.front>.body,
 .card.flip>.back>.body,
 .card>.body {
-    margin-left: var(--card-spacing);
-    margin-right: var(--card-spacing);
+    padding: var(--card-spacing) var(--card-spacing);
 }
 
 .card.flip>.front>.footer,
 .card.flip>.back>.footer,
 .card>.footer {
-    margin-left: var(--card-spacing);
-    margin-right: var(--card-spacing);
+    padding: calc(var(--card-spacing) / 2) var(--card-spacing);
 }
 
 .card:not(.no-hover, .flip):hover {
