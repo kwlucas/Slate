@@ -858,6 +858,14 @@ input.show-selected:not(.set-in) {
 .card.flip>.back>.header,
 .card>.header {
     padding: calc(var(--card-spacing) / 2) var(--card-spacing);
+    border-bottom: 1px solid var(--colorBaseWeak);
+    display: flex;
+}
+
+.card.flip>.front>.header.shaded,
+.card.flip>.back>.header.shaded,
+.card>.header.shaded {
+    background-color: var(--onElementColorSecondary);
 }
 
 .card.flip>.front>.body,
@@ -870,9 +878,11 @@ input.show-selected:not(.set-in) {
 .card.flip>.back>.footer,
 .card>.footer {
     padding: calc(var(--card-spacing) / 2) var(--card-spacing);
+    border-top: 1px solid var(--colorBaseWeak);
+    display: flex;
 }
 
-.card:not(.no-hover, .flip):hover {
+.card.hover-raise:not(.no-hover, .flip):hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 16px;
 }
 
