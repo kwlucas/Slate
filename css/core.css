@@ -809,15 +809,15 @@ input.show-selected:not(.set-in) {
 
 .card.flip>.front>.header:first-child,
 .card.flip>.front>img:first-child,
-.card.flip>.front>.content:first-child,
+.card.flip>.front>.body:first-child,
 .card.flip>.front>.footer:first-child,
 .card.flip>.back>.header:first-child,
 .card.flip>.back>img:first-child,
-.card.flip>.back>.content:first-child,
+.card.flip>.back>.body:first-child,
 .card.flip>.back>.footer:first-child,
 .card>.header:first-child,
 .card>img:first-child,
-.card>.content:first-child,
+.card>.body:first-child,
 .card>.footer:first-child {
     border-top-left-radius: var(--roundedCorner);
     border-top-right-radius: var(--roundedCorner);
@@ -825,15 +825,15 @@ input.show-selected:not(.set-in) {
 
 .card.flip>.front>.header:last-child,
 .card.flip>.front>img:last-child,
-.card.flip>.front>.content:last-child,
+.card.flip>.front>.body:last-child,
 .card.flip>.front>.footer:last-child,
 .card.flip>.back>.header:last-child,
 .card.flip>.back>img:last-child,
-.card.flip>.back>.content:last-child,
+.card.flip>.back>.body:last-child,
 .card.flip>.back>.footer:last-child,
 .card>.header:last-child,
 .card>img:last-child,
-.card>.content:last-child,
+.card>.body:last-child,
 .card>.footer:last-child {
     border-bottom-left-radius: var(--roundedCorner);
     border-bottom-right-radius: var(--roundedCorner);
@@ -841,15 +841,15 @@ input.show-selected:not(.set-in) {
 
 .card.flip>.front>.header:not(:last-child),
 .card.flip>.front>img:not(:last-child),
-.card.flip>.front>.content:not(:last-child),
+.card.flip>.front>.body:not(:last-child),
 .card.flip>.front>.footer:not(:last-child),
 .card.flip>.back>.header:not(:last-child),
 .card.flip>.back>img:not(:last-child),
-.card.flip>.back>.content:not(:last-child),
+.card.flip>.back>.body:not(:last-child),
 .card.flip>.back>.footer:not(:last-child),
 .card>.header:not(:last-child),
 .card>img:not(:last-child),
-.card>.content:not(:last-child),
+.card>.body:not(:last-child),
 .card>.footer:not(:last-child){
     margin-bottom: 0.66rem;
 }
@@ -861,9 +861,9 @@ input.show-selected:not(.set-in) {
     margin-right: var(--card-spacing);
 }
 
-.card.flip>.front>.content,
-.card.flip>.back>.content,
-.card>.content {
+.card.flip>.front>.body,
+.card.flip>.back>.body,
+.card>.body {
     margin-left: var(--card-spacing);
     margin-right: var(--card-spacing);
 }
