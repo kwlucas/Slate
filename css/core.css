@@ -802,9 +802,14 @@ input.show-selected:not(.set-in) {
     border-radius: var(--roundedCorner);
     color: var(--onBaseColorPrimary);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    transition: 0.3s;
     max-width: 100%;
 
     --card-spacing: 0.66rem;
+}
+
+.card.no-shadow {
+    box-shadow: none;
 }
 
 .card.flip>.front>.header:first-child,
@@ -882,8 +887,12 @@ input.show-selected:not(.set-in) {
     display: flex;
 }
 
-.card.hover-raise:not(.no-hover, .flip):hover {
+.card.hover-raise:not(.flip, .no-shadow):hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 16px;
+}
+
+.cardno-shadow.hover-raise:not(.flip):hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .card.flip>:not(.front, .back) {
