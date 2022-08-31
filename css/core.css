@@ -803,16 +803,18 @@ input.show-selected:not(.set-in) {
     color: var(--onBaseColorPrimary);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     max-width: 100%;
+
+    --card-spacing: 0.33rem;
 }
 
-.card div{
-    padding: 0.33rem;
-}
-
-.card>.header {
-    background-color: transparent;
-}
-
+.card.flip>.front>.header:first-child,
+.card.flip>.front>img:first-child,
+.card.flip>.front>.content:first-child,
+.card.flip>.front>.footer:first-child,
+.card.flip>.back>.header:first-child,
+.card.flip>.back>img:first-child,
+.card.flip>.back>.content:first-child,
+.card.flip>.back>.footer:first-child,
 .card>.header:first-child,
 .card>img:first-child,
 .card>.content:first-child,
@@ -821,6 +823,14 @@ input.show-selected:not(.set-in) {
     border-top-right-radius: var(--roundedCorner);
 }
 
+.card.flip>.front>.header:last-child,
+.card.flip>.front>img:last-child,
+.card.flip>.front>.content:last-child,
+.card.flip>.front>.footer:last-child,
+.card.flip>.back>.header:last-child,
+.card.flip>.back>img:last-child,
+.card.flip>.back>.content:last-child,
+.card.flip>.back>.footer:last-child,
 .card>.header:last-child,
 .card>img:last-child,
 .card>.content:last-child,
@@ -829,12 +839,40 @@ input.show-selected:not(.set-in) {
     border-bottom-right-radius: var(--roundedCorner);
 }
 
-.card>.content {
-    background-color: transparent;
+.card.flip>.front>.header:not(:last-child),
+.card.flip>.front>img:not(:last-child),
+.card.flip>.front>.content:not(:last-child),
+.card.flip>.front>.footer:not(:last-child),
+.card.flip>.back>.header:not(:last-child),
+.card.flip>.back>img:not(:last-child),
+.card.flip>.back>.content:not(:last-child),
+.card.flip>.back>.footer:not(:last-child),
+.card>.header:not(:last-child),
+.card>img:not(:last-child),
+.card>.content:not(:last-child),
+.card>.footer:not(:last-child){
+    margin-bottom: 0.66rem;
 }
 
+.card.flip>.front>.header,
+.card.flip>.back>.header,
+.card>.header {
+    margin-left: var(--card-spacing);
+    margin-right: var(--card-spacing);
+}
+
+.card.flip>.front>.content,
+.card.flip>.back>.content,
+.card>.content {
+    margin-left: var(--card-spacing);
+    margin-right: var(--card-spacing);
+}
+
+.card.flip>.front>.footer,
+.card.flip>.back>.footer,
 .card>.footer {
-    background-color: transparent;
+    margin-left: var(--card-spacing);
+    margin-right: var(--card-spacing);
 }
 
 .card:not(.no-hover, .flip):hover {
