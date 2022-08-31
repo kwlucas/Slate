@@ -860,9 +860,16 @@ input.show-selected:not(.set-in) {
     backface-visibility: hidden;
 }
 
-.flip-container:hover .flip, 
-.flip>.back {
+.flip-container:hover .flip.horizontal, 
+.flip.horizontal>.back,
+.flip-container:hover .flip:not(.vertical), 
+.flip:not(.vertical)>.back {
     transform: rotateY(180deg);
+}
+
+.flip-container:hover .flip.vertical, 
+.flip.vertical>.back{
+    transform: rotateX(180deg);
 }
 
 .fit-content {
