@@ -864,17 +864,17 @@ input.show-selected:not(.set-in) {
     padding-bottom: 0.66rem;
 } */
 
+.card.flip>.front>.shaded,
+.card.flip>.back>.shaded,
+.card>.shaded {
+    background-color: var(--cardShaded);
+}
+
 .card.flip>.front>.header,
 .card.flip>.back>.header,
 .card>.header {
     padding: calc(var(--card-spacing) / 2) var(--card-spacing);
     border-bottom: 1px solid var(--cardBorder);
-}
-
-.card.flip>.front>.header.shaded,
-.card.flip>.back>.header.shaded,
-.card>.header.shaded {
-    background-color: var(--cardShaded);
 }
 
 .card.flip>.front>.body,
@@ -888,12 +888,6 @@ input.show-selected:not(.set-in) {
 .card>.footer {
     padding: calc(var(--card-spacing) / 2) var(--card-spacing);
     border-top: 1px solid var(--cardBorder);
-}
-
-.card.flip>.front>.footer.shaded,
-.card.flip>.back>.footer.shaded,
-.card>.footer.shaded {
-    background-color: var(--cardShaded);
 }
 
 .card.hover-raise:not(.flip, .no-shadow):hover {
@@ -910,6 +904,7 @@ input.show-selected:not(.set-in) {
 
 .card {
     --cardBg: var(--colorBase);
+    --cardSubBg: var(--colorBaseWeak);
     --onCardPrimary: var(--onBaseColorPrimary);
     --onCardSecondary: var(--onBaseColorSecondary);
     --onCardWeak: var(--onBaseColorWeak);
@@ -920,9 +915,26 @@ input.show-selected:not(.set-in) {
 
 .card.theme-light {
     --cardBg: var(--nearWhite);
+    --cardSubBg: var(--whiteGrey);
     --onCardPrimary: var(--nearBlack);
     --onCardSecondary: var(--darkGrey);
     --onCardWeak: var(--lightGrey);
+}
+
+.card.theme-dark {
+    --cardBg: var(--middleGrey);
+    --cardSubBg: var(--midLightGrey);
+    --onCardPrimary: var(--nearWhite);
+    --onCardSecondary: var(--whiteGrey);
+    --onCardWeak: var(--lighterGrey);
+}
+
+.card.theme-night {
+    --cardBg: var(--nearBlack);
+    --cardSubBg: var(--darkGrey);
+    --onCardPrimary: var(--nearWhite);
+    --onCardSecondary: var(--whiteGrey);
+    --onCardWeak: var(--darkerGrey);
 }
 
 .flip-container>.flip {
