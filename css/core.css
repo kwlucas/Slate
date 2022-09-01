@@ -264,6 +264,8 @@ body.theme-light {
 
     --onBaseColorSecondary: var(--darkGrey);
 
+    --onBaseColorWeak: var(--lightGrey);
+
     --onElementColorPrimary: var(--nearWhite);
 
     --onElementColorSecondary: var(--whiteGrey);
@@ -291,6 +293,7 @@ body.theme-dark {
     --inverseLineColor: var(--nearBlack);
     --onBaseColorPrimary: var(--nearWhite);
     --onBaseColorSecondary: var(--whiteGrey);
+    --onBaseColorWeak: var(--lighterGrey);
     --onElementColorPrimary: var(--nearWhite);
     --onElementColorSecondary: var(--whiteGrey);
     --primaryUIcolor: var(--nearWhite);
@@ -313,6 +316,7 @@ body.theme-night {
     --onBaseColorSecondary: var(--whiteGrey);
     --onElementColorPrimary: var(--nearWhite);
     --onElementColorSecondary: var(--whiteGrey);
+    --onBaseColorWeak: var(--darkerGrey);
     --primaryUIcolor: var(--whiteGrey);
     --subPrimaryUIColor: var(--lightGrey);
     --onUIColorPrimary: var(--nearBlack);
@@ -482,11 +486,11 @@ progress:indeterminate {
     animation-name: progressIndeterminate;
     -webkit-animation-direction: normal;
     animation-direction: normal;
-    -webkit-animation-timing-function:linear;
-    animation-timing-function:linear;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
 }
 
-progress.bounce:indeterminate{
+progress.bounce:indeterminate {
     /* -webkit-animation-delay: 1s;
     animation-delay: 1s; */
     -webkit-animation-duration: 2.0s;
@@ -497,8 +501,8 @@ progress.bounce:indeterminate{
     animation-name: progressIndeterminateBounce;
     -webkit-animation-direction: alternate;
     animation-direction: alternate;
-    -webkit-animation-timing-function:ease-in-out;
-    animation-timing-function:ease-in-out;
+    -webkit-animation-timing-function: ease-in-out;
+    animation-timing-function: ease-in-out;
 }
 
 progress:indeterminate::-webkit-progress-bar {
@@ -899,6 +903,49 @@ input.show-selected:not(.set-in) {
     visibility: hidden;
 }
 
+.card {
+    --cardBg: var(--colorBase);
+    --cardSubBg: var(--colorBaseWeak);
+    --onCardPrimary: var(--onBaseColorPrimary);
+    --onCardSecondary: var(--onBaseColorSecondary);
+
+}
+
+.card.theme-light {
+    --colorBase: var(--nearWhite);
+    --colorBaseWeak: var(--whiteGrey);
+    /* Color used for elements and body text*/
+    --primaryElementColor: var(--midLightGrey);
+    /* Color slightly off from color first used for sidebar  */
+    --subPrimeElementColor: var(--lighterGrey);
+    /* Secondary color used for elements*/
+    --secondaryElementColor: var(--middleGrey);
+    /* Color used for text and outlines */
+    --primaryLineColor: var(--nearBlack);
+
+    --inverseLineColor: var(--nearWhite);
+
+    --onBaseColorPrimary: var(--nearBlack);
+
+    --onBaseColorSecondary: var(--darkGrey);
+
+    --onElementColorPrimary: var(--nearWhite);
+
+    --onElementColorSecondary: var(--whiteGrey);
+
+    --primaryUIcolor: var(--nearWhite);
+
+    --subPrimaryUIColor: var(--whiteGrey);
+
+    --onUIColorPrimary: var(--nearBlack);
+
+    --secondaryUIcolor: var(--nearWhite);
+
+    --subSecondaryUIColor: var(--whiteGrey);
+
+    --onUIColorSecondary: var(--nearBlack);
+}
+
 .flip-container>.flip {
     position: relative;
     perspective: 1000px;
@@ -914,15 +961,15 @@ input.show-selected:not(.set-in) {
     backface-visibility: hidden;
 }
 
-.flip-container:hover .flip.horizontal, 
+.flip-container:hover .flip.horizontal,
 .flip.horizontal>.back,
-.flip-container:hover .flip:not(.vertical), 
+.flip-container:hover .flip:not(.vertical),
 .flip:not(.vertical)>.back {
     transform: rotateY(180deg);
 }
 
-.flip-container:hover .flip.vertical, 
-.flip.vertical>.back{
+.flip-container:hover .flip.vertical,
+.flip.vertical>.back {
     transform: rotateX(180deg);
 }
 
