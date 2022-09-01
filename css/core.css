@@ -314,9 +314,9 @@ body.theme-night {
     --inverseLineColor: var(--nearBlack);
     --onBaseColorPrimary: var(--nearWhite);
     --onBaseColorSecondary: var(--whiteGrey);
+    --onBaseColorWeak: var(--darkerGrey);
     --onElementColorPrimary: var(--nearWhite);
     --onElementColorSecondary: var(--whiteGrey);
-    --onBaseColorWeak: var(--darkerGrey);
     --primaryUIcolor: var(--whiteGrey);
     --subPrimaryUIColor: var(--lightGrey);
     --onUIColorPrimary: var(--nearBlack);
@@ -802,9 +802,9 @@ input.show-selected:not(.set-in) {
 }
 
 .card {
-    background-color: var(--colorBase);
+    background-color: var(--cardBg);
+    color: var(--onCardPrimary);
     border-radius: var(--roundedCorner);
-    color: var(--onBaseColorPrimary);
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     transition: 0.3s;
     max-width: 100%;
@@ -814,6 +814,7 @@ input.show-selected:not(.set-in) {
 
 .card.no-shadow {
     box-shadow: none;
+    border: 1px solid var(--cardBorder);
 }
 
 .card.flip>.front>.header:first-child,
@@ -867,14 +868,13 @@ input.show-selected:not(.set-in) {
 .card.flip>.back>.header,
 .card>.header {
     padding: calc(var(--card-spacing) / 2) var(--card-spacing);
-    border-bottom: 1px solid var(--colorBaseWeak);
-    display: flex;
+    border-bottom: 1px solid var(--cardBorder);
 }
 
 .card.flip>.front>.header.shaded,
 .card.flip>.back>.header.shaded,
 .card>.header.shaded {
-    background-color: var(--onElementColorSecondary);
+    background-color: var(--cardShaded);
 }
 
 .card.flip>.front>.body,
@@ -887,15 +887,20 @@ input.show-selected:not(.set-in) {
 .card.flip>.back>.footer,
 .card>.footer {
     padding: calc(var(--card-spacing) / 2) var(--card-spacing);
-    border-top: 1px solid var(--colorBaseWeak);
-    display: flex;
+    border-top: 1px solid var(--cardBorder);
+}
+
+.card.flip>.front>.footer.shaded,
+.card.flip>.back>.footer.shaded,
+.card>.footer.shaded {
+    background-color: var(--cardShaded);
 }
 
 .card.hover-raise:not(.flip, .no-shadow):hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 16px;
 }
 
-.cardno-shadow.hover-raise:not(.flip):hover {
+.card.no-shadow.hover-raise:not(.flip):hover {
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
@@ -905,45 +910,19 @@ input.show-selected:not(.set-in) {
 
 .card {
     --cardBg: var(--colorBase);
-    --cardSubBg: var(--colorBaseWeak);
     --onCardPrimary: var(--onBaseColorPrimary);
     --onCardSecondary: var(--onBaseColorSecondary);
+    --onCardWeak: var(--onBaseColorWeak);
 
+    --cardBorder: rgba(0, 0, 0, 0.24);
+    --cardShaded: rgba(0, 0, 0, 0.1);
 }
 
 .card.theme-light {
-    --colorBase: var(--nearWhite);
-    --colorBaseWeak: var(--whiteGrey);
-    /* Color used for elements and body text*/
-    --primaryElementColor: var(--midLightGrey);
-    /* Color slightly off from color first used for sidebar  */
-    --subPrimeElementColor: var(--lighterGrey);
-    /* Secondary color used for elements*/
-    --secondaryElementColor: var(--middleGrey);
-    /* Color used for text and outlines */
-    --primaryLineColor: var(--nearBlack);
-
-    --inverseLineColor: var(--nearWhite);
-
-    --onBaseColorPrimary: var(--nearBlack);
-
-    --onBaseColorSecondary: var(--darkGrey);
-
-    --onElementColorPrimary: var(--nearWhite);
-
-    --onElementColorSecondary: var(--whiteGrey);
-
-    --primaryUIcolor: var(--nearWhite);
-
-    --subPrimaryUIColor: var(--whiteGrey);
-
-    --onUIColorPrimary: var(--nearBlack);
-
-    --secondaryUIcolor: var(--nearWhite);
-
-    --subSecondaryUIColor: var(--whiteGrey);
-
-    --onUIColorSecondary: var(--nearBlack);
+    --cardBg: var(--nearWhite);
+    --onCardPrimary: var(--nearBlack);
+    --onCardSecondary: var(--darkGrey);
+    --onCardWeak: var(--lightGrey);
 }
 
 .flip-container>.flip {
