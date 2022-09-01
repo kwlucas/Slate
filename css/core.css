@@ -885,6 +885,34 @@ input.show-selected:not(.set-in) {
     background-color: var(--cardShaded);
 }
 
+.card.flip>.front>.info,
+.card.flip>.back>.info,
+.card>.info {
+    background-color: var(--infoColor);
+    color: var(--nearBlack);
+}
+
+.card.flip>.front>.success,
+.card.flip>.back>.success,
+.card>.success {
+    background-color: var(--successColor);
+    color: var(--nearBlack);
+}
+
+.card.flip>.front>.caution,
+.card.flip>.back>.caution,
+.card>.caution {
+    background-color: var(--cautionColor);
+    color: var(--nearBlack);
+}
+
+.card.flip>.front>.danger,
+.card.flip>.back>.danger,
+.card>.danger {
+    background-color: var(--dangerColor);
+    color: var(--nearBlack);
+}
+
 .card.flip>.front>.header,
 .card.flip>.back>.header,
 .card>.header {
