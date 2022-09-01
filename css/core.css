@@ -24,6 +24,10 @@
     /*#04AA6D; /* #58FC8C */
     --subSuccessColor: #39E36F;
 
+    --darkShadow: rgba(0, 0, 0, 0.24);
+    --darkShadowWeak: rgba(0, 0, 0, 0.1);
+    --lightShadow: rgba(100, 100, 100, 0.24);
+    --lightShadowWeak: rgba(100, 100, 100, 0.1);
 
     --roundedCorner: 5px;
 
@@ -281,6 +285,10 @@ body.theme-light {
     --subSecondaryUIColor: var(--whiteGrey);
 
     --onUIColorSecondary: var(--nearBlack);
+
+    --shadowColorPrimary: var(--darkShadow);
+
+    --shadowColorSecondary: var(--darkShadowWeak);
 }
 
 body.theme-dark {
@@ -302,6 +310,8 @@ body.theme-dark {
     --secondaryUIcolor: var(--middleGrey);
     --subSecondaryUIColor: var(--midLightGrey);
     --onUIColorSecondary: var(--nearWhite);
+    --shadowColorPrimary: var(--darkShadow);
+    --shadowColorSecondary: var(--darkShadowWeak);
 }
 
 body.theme-night {
@@ -323,6 +333,8 @@ body.theme-night {
     --secondaryUIcolor: var(--darkGrey);
     --subSecondaryUIColor: var(--darkerGrey);
     --onUIColorSecondary: var(--lightGrey);
+    --shadowColorPrimary: var(--lightShadow);
+    --shadowColorSecondary: var(--lightShadowWeak);
 }
 
 body,
@@ -805,11 +817,14 @@ input.show-selected:not(.set-in) {
     background-color: var(--cardBg);
     color: var(--onCardPrimary);
     border-radius: var(--roundedCorner);
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    transition: 0.3s;
+    box-shadow: var(--cardBorder) 0px 3px 8px;
     max-width: 100%;
 
     --card-spacing: 0.66rem;
+}
+
+.card.hover-raise {
+    transition: 0.3s;
 }
 
 .card.no-shadow {
@@ -891,11 +906,11 @@ input.show-selected:not(.set-in) {
 }
 
 .card.hover-raise:not(.flip, .no-shadow):hover {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 6px 16px;
+    box-shadow: var(--cardBorder) 0px 6px 16px;
 }
 
 .card.no-shadow.hover-raise:not(.flip):hover {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: var(--cardBorder) 0px 3px 8px;
 }
 
 .card.flip>:not(.front, .back) {
@@ -909,8 +924,8 @@ input.show-selected:not(.set-in) {
     --onCardSecondary: var(--onBaseColorSecondary);
     --onCardWeak: var(--onBaseColorWeak);
 
-    --cardBorder: rgba(0, 0, 0, 0.24);
-    --cardShaded: rgba(0, 0, 0, 0.1);
+    --cardBorder: var(--shadowColorPrimary);
+    --cardShaded: var(--shadowColorSecondary);
 }
 
 .card.theme-light {
@@ -919,6 +934,9 @@ input.show-selected:not(.set-in) {
     --onCardPrimary: var(--nearBlack);
     --onCardSecondary: var(--darkGrey);
     --onCardWeak: var(--lightGrey);
+
+    --cardBorder: var(--darkShadow);
+    --cardShaded: var(--darkShadowWeak);
 }
 
 .card.theme-dark {
@@ -927,6 +945,9 @@ input.show-selected:not(.set-in) {
     --onCardPrimary: var(--nearWhite);
     --onCardSecondary: var(--whiteGrey);
     --onCardWeak: var(--lighterGrey);
+
+    --cardBorder: var(--darkShadow);
+    --cardShaded: var(--darkShadowWeak);
 }
 
 .card.theme-night {
@@ -935,6 +956,9 @@ input.show-selected:not(.set-in) {
     --onCardPrimary: var(--nearWhite);
     --onCardSecondary: var(--whiteGrey);
     --onCardWeak: var(--darkerGrey);
+
+    --cardBorder: var(--lightShadow);
+    --cardShaded: var(--lightShadowWeak);
 }
 
 .flip-container>.flip {
