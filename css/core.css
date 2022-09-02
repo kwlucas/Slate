@@ -222,13 +222,13 @@ nav.sidebar.left>ul:not(.no-format)>li+ul:not(.no-format)>li {
     font-weight: normal;
     border-radius: var(--roundedCorner);
     background-color: unset;
-    padding-left: calc(0.33rem + 0.33rem + var(--treePadding));
+    padding-left: calc(0.66rem + var(--treePadding));
 }
 
 .tree.right>ul>li+ul>li,
 nav.sidebar.right>ul:not(.no-format)>li+ul:not(.no-format)>li {
     padding-left: unset;
-    padding-right: calc(0.33rem + 0.33rem + var(--treePadding));
+    padding-right: calc(0.66rem + var(--treePadding));
 }
 
 .tree>ul>li+ul>li:hover,
