@@ -153,6 +153,30 @@ body.format-sections section:not(.no-format) .block:last-child {
     margin-bottom: 0.33rem;
 }
 
+h1 {
+    font-size: calc(1.5rem + 1.5vw);
+}
+
+h2 {
+    font-size: calc(1.25rem + 1.25vw);
+}
+
+h3 {
+    font-size: calc(1rem + 1vw);
+}
+
+h4 {
+    font-size: calc(1rem + 0.75vw);
+}
+
+h5 {
+    font-size: calc(1rem + 0.5vw);
+}
+
+h6 {
+    font-size: 1rem;
+}
+
 .tree a,
 nav.sidebar a {
     text-decoration: none;
