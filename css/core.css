@@ -26,8 +26,8 @@
 
     --darkShadow: rgba(0, 0, 0, 0.24);
     --darkShadowWeak: rgba(0, 0, 0, 0.1);
-    --lightShadow: rgba(100, 100, 100, 0.24);
-    --lightShadowWeak: rgba(100, 100, 100, 0.1);
+    --lightShadow: rgba(115, 115, 115, 0.24);
+    --lightShadowWeak: rgba(115, 115, 115, 0.1);
 
     --roundedCorner: 5px;
 
@@ -899,7 +899,7 @@ input.show-selected:not(.set-in) {
 }
 
 .box {
-    display: flex;
+    display: flex !important;
 }
 
 .card {
