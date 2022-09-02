@@ -900,6 +900,49 @@ input.show-selected:not(.set-in) {
 
 .box {
     display: flex !important;
+    background-color: var(--box-bg);
+    color: var(--box-text);
+    border-radius: 7px;
+    padding: 0.33rem;
+}
+
+.box.size-contents>*{
+    flex: 1 1 0;
+}
+
+.box.scroll {
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.box {
+    --box-bg: var(--primaryElementColor);
+    --box-text: var(--onElementColorPrimary);
+}
+
+.box.white {
+    --box-bg: var(--nearWhite);
+    --box-text: var(--nearBlack);
+}
+
+.box.caution {
+    --box-bg: var(--cautionColor);
+    --box-text: var(--nearBlack);
+}
+
+.box.danger {
+    --box-bg: var(--dangerColor);
+    --box-text: var(--nearBlack);
+}
+
+.box.info {
+    --box-bg: var(--infoColor);
+    --box-text: var(--nearBlack);
+}
+
+.box.success {
+    --box-bg: var(--successColor);
+    --box-text: var(--nearBlack);
 }
 
 .card {
@@ -907,6 +950,7 @@ input.show-selected:not(.set-in) {
     color: var(--onCardPrimary);
     border-radius: var(--roundedCorner);
     box-shadow: var(--cardBorder) 0px 3px 8px;
+    margin: 8px;
     max-width: 100%;
 
     --card-spacing: 0.66rem;
