@@ -772,7 +772,7 @@ button.success {
     --btn-text: var(--nearBlack);
 }
 
-/* Button styels and groups */
+/* Button styles and groups */
 
 .button-strip {
     display: flex;
@@ -807,6 +807,39 @@ button.success {
 .button-strip:not(.vertical).rounded button:last-child {
     border-top-right-radius: 999px;
     border-bottom-right-radius: 999px;
+}
+
+.button-strip.vertical {
+    flex-direction: column;
+}
+
+.button-strip.vertical button {
+    margin: -1px 0;
+    width: 100%;
+}
+
+.button-strip.vertical button:first-child {
+    border-top-left-radius: var(--roundedCorner);
+    border-top-right-radius: var(--roundedCorner);
+    margin-top: 0;
+}
+
+.button-strip.vertical button:last-child {
+    border-bottom-right-radius: var(--roundedCorner);
+    border-bottom-left-radius: var(--roundedCorner);
+    margin-bottom: 0;
+}
+
+.button-strip.vertical.rounded button:first-child {
+    padding-top: 0.75em;
+    border-top-left-radius: 999px;
+    border-top-right-radius: 999px;
+}
+
+.button-strip.vertical.rounded button:last-child {
+    padding-bottom: 0.75em;
+    border-bottom-right-radius: 999px;
+    border-bottom-left-radius: 999px;
 }
 
 
