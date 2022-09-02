@@ -153,6 +153,35 @@ body.format-sections section:not(.no-format) .block:last-child {
     margin-bottom: 0.33rem;
 }
 
+/* need highlight colors and classes */
+
+.italics {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.strike,
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+strong,
+.bold,
 .heading-1,
 .heading-2,
 .heading-3,
