@@ -196,7 +196,7 @@ strong,
 .title-3,
 .title-4,
 .title-5,
-.title-6{
+.title-6 {
     font-weight: normal;
 }
 
@@ -293,6 +293,34 @@ nav.sidebar.right>ul:not(.no-format)>li {
     padding-right: calc(0.33rem + var(--treePadding));
 }
 
+/* Top level hover effect */
+.tree>:first-child:hover,
+.tree>ul+a:hover,
+.tree>ul+p:hover,
+.tree>ul+i:hover,
+nav.sidebar>ul:not(.no-format)+a:hover,
+nav.sidebar>ul:not(.no-format)+p:hover,
+nav.sidebar>ul:not(.no-format)+i:hover,
+nav.sidebar>a:first-of-type:hover,
+nav.sidebar>p:first-of-type:hover,
+nav.sidebar>i:first-of-type:hover {
+    background-color: var(--primaryElementColor);
+}
+
+.tree.secondary-color>:first-child:hover,
+.tree.secondary-color>ul+a:hover,
+.tree.secondary-color>ul+p:hover,
+.tree.secondary-color>ul+i:hover,
+nav.sidebar.secondary-color>ul:not(.no-format)+a:hover,
+nav.sidebar.secondary-color>ul:not(.no-format)+p:hover,
+nav.sidebar.secondary-color>ul:not(.no-format)+i:hover,
+nav.sidebar.secondary-color>a:first-of-type:hover,
+nav.sidebar.secondary-color>p:first-of-type:hover,
+nav.sidebar.secondary-color>i:first-of-type:hover {
+    background-color: var(--secondaryElementColor);
+}
+
+/* Standard hover effect */
 .tree>ul>li:hover,
 nav.sidebar>ul:not(.no-format)>li:hover {
     background-color: var(--primaryElementColor);
@@ -323,7 +351,7 @@ nav.sidebar.secondary-color>ul:not(.no-format)>li:hover {
 
 .tree .selected,
 nav.sidebar .selected {
-    background-color: var(--infoColor);
+    background-color: var(--infoColor) !important;
 }
 
 
@@ -906,7 +934,7 @@ input.show-selected:not(.set-in) {
     padding: 0.33rem;
 }
 
-.box.size-contents>*{
+.box.size-contents>* {
     flex: 1 1 0;
 }
 
