@@ -595,7 +595,9 @@ header {
 }
 
 .dropdown.hover:hover>.dropdown-trigger,
-.dropdown.hover.show-hover>.dropdown-trigger {
+.dropdown.hover.show-hover>.dropdown-trigger,
+.dropdown.hover:hover.full-length-hover,
+.dropdown.hover.show-hover.full-length-hover {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     background-color: var(--hoverColorPrimary);
