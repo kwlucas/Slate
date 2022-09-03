@@ -853,8 +853,17 @@ button.success {
 }
 
 /* Button styles and groups */
+.button,
 a.button {
+    display: inline-block;
     text-decoration: none;
+    border-style: outset;
+    text-align: center;
+}
+
+.button:active,
+a.button:active {
+    border-style: inset;
 }
 
 .button-strip {
