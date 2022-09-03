@@ -137,19 +137,19 @@ input {
 progress,
 .stack:not(:last-child),
 .container:not(:last-child),
-.block:not(:last-child) {
+.box:not(:last-child) {
     margin-bottom: 0.33rem;
 }
 
 .row .stack:last-child,
 .row .container:last-child,
-.row .block:last-child,
+.row .box:last-child,
 .slate-section .stack:last-child,
 .slate-section .container:last-child,
-.slate-section .block:last-child,
+.slate-section .box:last-child,
 body.format-sections section:not(.no-format) .stack:last-child,
 body.format-sections section:not(.no-format) .container:last-child,
-body.format-sections section:not(.no-format) .block:last-child {
+body.format-sections section:not(.no-format) .box:last-child {
     margin-bottom: 0.33rem;
 }
 
@@ -794,7 +794,7 @@ button.primary-color {
 .sidebar button,
 header button,
 footer button,
-.block button,
+.box button,
 button.secondary-color {
     --btn-bg: var(--secondaryUIcolor);
     --btn-border: var(--subSecondaryUIColor);
@@ -916,7 +916,7 @@ input {
 .sidebar input,
 header input,
 footer input,
-.block input {
+.box input {
     background-color: var(--secondaryUIcolor);
     border-color: var(--subSecondaryUIColor);
     color: var(--onUIColorSecondary);
@@ -976,63 +976,11 @@ input.show-selected:not(.set-in) {
     margin-right: 0.33rem;
 } */
 
-.block {
-    background-color: var(--block-bg);
-    color: var(--block-text);
-    border-radius: 7px;
-    padding: 0.33rem;
-}
-
-.block {
-    --block-bg: var(--primaryElementColor);
-    --block-text: var(--onElementColorPrimary);
-}
-
-.block.white {
-    --block-bg: var(--nearWhite);
-    --block-text: var(--nearBlack);
-}
-
-.block.caution {
-    --block-bg: var(--cautionColor);
-    --block-text: var(--nearBlack);
-}
-
-.block.danger {
-    --block-bg: var(--dangerColor);
-    --block-text: var(--nearBlack);
-}
-
-.block.info {
-    --block-bg: var(--infoColor);
-    --block-text: var(--nearBlack);
-}
-
-.block.success {
-    --block-bg: var(--successColor);
-    --block-text: var(--nearBlack);
-}
-
-.block.fill {
-    height: 100%;
-    width: 100%;
-}
-
 .box {
-    display: flex !important;
     background-color: var(--box-bg);
     color: var(--box-text);
     border-radius: 7px;
     padding: 0.33rem;
-}
-
-.box.size-contents>* {
-    flex: 1 1 0;
-}
-
-.box.scroll {
-    overflow-x: scroll;
-    white-space: nowrap;
 }
 
 .box {
@@ -1063,6 +1011,58 @@ input.show-selected:not(.set-in) {
 .box.success {
     --box-bg: var(--successColor);
     --box-text: var(--nearBlack);
+}
+
+.box.fill {
+    height: 100%;
+    width: 100%;
+}
+
+.block {
+    display: flex !important;
+    background-color: var(--block-bg);
+    color: var(--block-text);
+    border-radius: 7px;
+    padding: 0.33rem;
+}
+
+.block.size-contents>* {
+    flex: 1 1 0;
+}
+
+.block.scroll {
+    overflow-x: scroll;
+    white-space: nowrap;
+}
+
+.block {
+    --block-bg: var(--primaryElementColor);
+    --block-text: var(--onElementColorPrimary);
+}
+
+.block.white {
+    --block-bg: var(--nearWhite);
+    --block-text: var(--nearBlack);
+}
+
+.block.caution {
+    --block-bg: var(--cautionColor);
+    --block-text: var(--nearBlack);
+}
+
+.block.danger {
+    --block-bg: var(--dangerColor);
+    --block-text: var(--nearBlack);
+}
+
+.block.info {
+    --block-bg: var(--infoColor);
+    --block-text: var(--nearBlack);
+}
+
+.block.success {
+    --block-bg: var(--successColor);
+    --block-text: var(--nearBlack);
 }
 
 .card {
