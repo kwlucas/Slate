@@ -573,6 +573,11 @@ header {
 
 .dropdown>.dropdown-content>*{
     padding: 0.165rem;
+    border-radius: inherit;
+}
+
+.dropdown>.dropdown-content>*:not(.no-hover):hover{
+    background-color: var(--hoverColorSecondary);
 }
 
 .dropdown.hover>.dropdown-trigger {
@@ -588,6 +593,7 @@ header {
 .dropdown.hover.show-hover>.dropdown-trigger {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+    background-color: var(--hoverColorPrimary);
 }
 
 .dropdown.hover:hover>.dropdown-content,
@@ -602,6 +608,8 @@ header {
     --dropdownBg: var(--primaryElementColor);
     --onDropdown: var(--onElementColorPrimary);
     --dropdownShadow: var(--shadowColorPrimary);
+    --hoverColorPrimary: var(--secondaryElementColor);
+    --hoverColorSecondary: var(--subPrimeElementColor);
 }
 
 progress:not(.no-format) {
