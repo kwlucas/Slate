@@ -770,19 +770,24 @@ button {
     filter: brightness(100%);
 }
 
+.button:not(.no-hover):hover,
+.button.show-hover:not(.no-hover),
 button:not(.no-hover):hover,
 button.show-hover:not(.no-hover) {
     filter: brightness(95%);
 }
 
+.button.rounded,
 button.rounded {
     border-radius: 999px;
 }
 
-.button:hover {
+/* .button:hover {
     background-color: var(--primaryElementColor);
-}
+} */
 
+.button,
+.button.primary-color,
 button,
 button.primary-color {
     --btn-bg: var(--primaryUIcolor);
@@ -790,6 +795,12 @@ button.primary-color {
     --btn-text: var(--onUIColorPrimary);
 }
 
+.navbar .button,
+.sidebar .button,
+header .button,
+footer .button,
+.box .button,
+.button.secondary-color,
 .navbar button,
 .sidebar button,
 header button,
@@ -801,30 +812,35 @@ button.secondary-color {
     --btn-text: var(--onUIColorSecondary);
 }
 
+.button.white,
 button.white {
     --btn-bg: var(--nearWhite);
     --btn-border: var(--whiteGrey);
     --btn-text: var(--nearBlack);
 }
 
+.button.caution,
 button.caution {
     --btn-bg: var(--cautionColor);
     --btn-border: var(--subCautionColor);
     --btn-text: var(--nearBlack);
 }
 
+.button.danger,
 button.danger {
     --btn-bg: var(--dangerColor);
     --btn-border: var(--subDangerColor);
     --btn-text: var(--nearBlack);
 }
 
+.button.info,
 button.info {
     --btn-bg: var(--infoColor);
     --btn-border: var(--subInfoColor);
     --btn-text: var(--nearBlack);
 }
 
+.button.success,
 button.success {
     --btn-bg: var(--successColor);
     --btn-border: var(--subSuccessColor);
@@ -832,37 +848,46 @@ button.success {
 }
 
 /* Button styles and groups */
+a.button {
+    text-decoration: none;
+}
 
 .button-strip {
     display: flex;
     align-items: center;
 }
 
+.button-strip .button,
 .button-strip button {
     border-radius: 0;
 }
 
+.button-strip:not(.vertical) .button,
 .button-strip:not(.vertical) button {
     margin: 0 -1px;
 }
 
+.button-strip:not(.vertical) .button:first-child,
 .button-strip:not(.vertical) button:first-child {
     border-top-left-radius: var(--roundedCorner);
     border-bottom-left-radius: var(--roundedCorner);
     margin-left: 0;
 }
 
+.button-strip:not(.vertical) .button:last-child,
 .button-strip:not(.vertical) button:last-child {
     border-top-right-radius: var(--roundedCorner);
     border-bottom-right-radius: var(--roundedCorner);
     margin-right: 0;
 }
 
+.button-strip:not(.vertical).rounded .button:first-child,
 .button-strip:not(.vertical).rounded button:first-child {
     border-top-left-radius: 999px;
     border-bottom-left-radius: 999px;
 }
 
+.button-strip:not(.vertical).rounded .button:last-child,
 .button-strip:not(.vertical).rounded button:last-child {
     border-top-right-radius: 999px;
     border-bottom-right-radius: 999px;
@@ -872,29 +897,34 @@ button.success {
     flex-direction: column;
 }
 
+.button-strip.vertical .button,
 .button-strip.vertical button {
     margin: -1px 0;
     width: 100%;
 }
 
+.button-strip.vertical .button:first-child,
 .button-strip.vertical button:first-child {
     border-top-left-radius: var(--roundedCorner);
     border-top-right-radius: var(--roundedCorner);
     margin-top: 0;
 }
 
+.button-strip.vertical .button:last-child,
 .button-strip.vertical button:last-child {
     border-bottom-right-radius: var(--roundedCorner);
     border-bottom-left-radius: var(--roundedCorner);
     margin-bottom: 0;
 }
 
+.button-strip.vertical.rounded .button:first-child,
 .button-strip.vertical.rounded button:first-child {
     padding-top: 0.75em;
     border-top-left-radius: 999px;
     border-top-right-radius: 999px;
 }
 
+.button-strip.vertical.rounded .button:last-child,
 .button-strip.vertical.rounded button:last-child {
     padding-bottom: 0.75em;
     border-bottom-right-radius: 999px;
