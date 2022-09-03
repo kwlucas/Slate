@@ -553,6 +553,57 @@ header {
     margin: 0 calc(0.5rem - 1px);
 }
 
+.dropdown {
+    position: relative;
+}
+
+.dropdown>.dropdown-trigger {
+    display: block;
+    margin-bottom: 0;
+}
+
+.dropdown>.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--dropdownBg);
+    color: var(--onDropdown);
+    box-shadow: var(--dropdownShadow) 0px 3px 8px 0px;
+    border-radius: var(--roundedCorner);
+}
+
+.dropdown>.dropdown-content>*{
+    padding: 0.165rem;
+}
+
+.dropdown.hover>.dropdown-trigger {
+    margin-bottom: 0;
+}
+
+.dropdown.hover>.dropdown-content {
+    border-top-left-radius: 0;
+    min-width: 110%;
+}
+
+.dropdown.hover:hover>.dropdown-trigger,
+.dropdown.hover.show-hover>.dropdown-trigger {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.dropdown.hover:hover>.dropdown-content,
+.dropdown.hover.show-hover>.dropdown-content,
+.dropdown:not(.hover).selected>.dropdown-content,
+.dropdown:not(.hover).show-selected>.dropdown-content
+{
+    display: block;
+}
+
+.dropdown {
+    --dropdownBg: var(--primaryElementColor);
+    --onDropdown: var(--onElementColorPrimary);
+    --dropdownShadow: var(--shadowColorPrimary);
+}
+
 progress:not(.no-format) {
     -moz-appearance: none;
     -webkit-appearance: none;
