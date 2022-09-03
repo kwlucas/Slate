@@ -504,6 +504,11 @@ main {
     justify-content: flex-end;
 }
 
+.inline {
+    display:inline-flex;
+    align-items: baseline;
+}
+
 .sidebar,
 .sidebar.left {
     background-color: var(--subPrimeElementColor);
