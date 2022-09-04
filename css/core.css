@@ -558,6 +558,97 @@ header {
     margin: 0 calc(0.5rem - 1px);
 }
 
+.popup {
+    position: relative;
+    width: fit-content;
+}
+
+.popup>.popup-content {
+    display: none;
+    z-index: 1;
+    position: absolute;
+    text-align: center;
+    background-color: var(--popup-bg);
+    color: var(--popup-color);
+}
+
+.popup-content.above {
+    bottom: 125%;
+    left: 50%;
+    margin-left: -50%;
+}
+
+.popup-content.above::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--popup-bg) transparent transparent transparent;
+}
+
+.popup-content.below {
+    top: 125%;
+    left: 50%;
+    margin-left: -50%;
+}
+
+.popup-content.below::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--popup-bg) transparent;
+}
+
+.popup-content.left {
+    top: 200%;
+    right: 105%;
+    margin-top: -50%;
+}
+
+.popup-content.left::after {
+    content: "";
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent transparent var(--popup-bg);
+}
+
+.popup-content.right {
+    top: 200%;
+    left: 105%;
+    margin-top: -50%;
+}
+
+.popup-content.right::after {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 50%;
+    margin-top: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent var(--popup-bg) transparent transparent;
+}
+
+.popup-trigger.on-select:focus+.popup-content {
+    display: block;
+}
+
+.popup {
+    --popup-bg: var(--primaryElementColor);
+    --popup-color: var(--onElementColorPrimary);
+}
+
 .dropdown {
     position: relative;
 }
