@@ -1167,7 +1167,7 @@ input.show-selected:not(.set-in) {
     --box-text: var(--nearBlack);
 }
 
-.box.fill {
+.fill {
     height: 100%;
     width: 100%;
 }
