@@ -563,6 +563,10 @@ header {
     width: fit-content;
 }
 
+.popup .fill{
+    width: auto;
+}
+
 .popup>.popup-content {
     display: none;
     z-index: 1;
@@ -574,8 +578,8 @@ header {
 
 .popup-content.above {
     bottom: 125%;
-    left: 50%;
-    margin-left: -50%;
+    left: 10%;
+    right: 10%
 }
 
 .popup-content.above::after {
@@ -591,8 +595,8 @@ header {
 
 .popup-content.below {
     top: 125%;
-    left: 50%;
-    margin-left: -50%;
+    left: 10%;
+    right: 10%
 }
 
 .popup-content.below::after {
@@ -605,6 +609,8 @@ header {
     border-style: solid;
     border-color: transparent transparent var(--popup-bg) transparent;
 }
+
+/* Left and right may need to go top 50% and bottom 50% no margin adjust */
 
 .popup-content.left {
     top: 200%;
@@ -647,6 +653,17 @@ header {
 .popup {
     --popup-bg: var(--primaryElementColor);
     --popup-color: var(--onElementColorPrimary);
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip .tooltip-display {
+    position: absolute;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.3s;
 }
 
 .dropdown {
