@@ -136,19 +136,19 @@ input {
 
 progress,
 .stack:not(:last-child),
-.container:not(:last-child),
+/* .container:not(:last-child), */
 .box:not(:last-child) {
     margin-bottom: 0.33rem;
 }
 
 .row .stack:last-child,
-.row .container:last-child,
+/* .row .container:last-child, */
 .row .box:last-child,
 .slate-section .stack:last-child,
-.slate-section .container:last-child,
+/* .slate-section .container:last-child, */
 .slate-section .box:last-child,
 body.format-sections section:not(.no-format) .stack:last-child,
-body.format-sections section:not(.no-format) .container:last-child,
+/* body.format-sections section:not(.no-format) .container:last-child, */
 body.format-sections section:not(.no-format) .box:last-child {
     margin-bottom: 0.33rem;
 }
