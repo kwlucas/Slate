@@ -1471,14 +1471,14 @@ body.format-sections section:not(.no-format) .row {
 
 .row>.format-all-elements>*:not(.no-format),
 .slate-section.format-all-elements>*:not(.no-format),
-.row>section,
-.row>div,
+.row>section:not(.no-format),
+.row>div:not(.no-format),
 .row>.spread-auto,
-.slate-section>section,
-.slate-section>div,
+.slate-section>section:not(.no-format),
+.slate-section>div:not(.no-format),
 .slate-section>.spread-auto,
-body.format-sections section:not(.no-format)>section,
-body.format-sections section:not(.no-format)>div,
+body.format-sections section:not(.no-format)>section:not(.no-format),
+body.format-sections section:not(.no-format)>div:not(.no-format),
 body.format-sections section:not(.no-format)>.spread-auto {
     display: block;
     width: unset;
