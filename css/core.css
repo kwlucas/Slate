@@ -458,6 +458,10 @@ main {
     display: none;
 }
 
+.invisible {
+    visibility: hidden;
+}
+
 
 .navbar {
     background-color: var(--primaryElementColor);
