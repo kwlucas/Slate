@@ -971,9 +971,14 @@ a.button {
     text-align: center;
 }
 
-.button:active,
-a.button:active {
+.button:active:not(.no-border),
+a.button:active:not(.no-border) {
     border-style: inset;
+}
+
+button.no-border,
+.button.no-border {
+    border: none;
 }
 
 .button-strip {
