@@ -971,6 +971,7 @@ a.button {
     text-align: center;
 }
 
+button:active:not(.no-border),
 .button:active:not(.no-border),
 a.button:active:not(.no-border) {
     border-style: inset;
