@@ -2226,3 +2226,33 @@ body.format-sections section:not(.no-format)>.row {
 .elements-prod-down-4>* {
     padding-top: calc(1.33rem - 1px);
 }
+
+.elements-prod-5>* {
+    padding: calc(1.66rem - 1px);
+}
+
+.elements-prod-horizontal-5>* {
+    padding-right: calc(1.66rem - 1px);
+    padding-left: calc(1.66rem - 1px);
+}
+
+.elements-prod-vertical-5>* {
+    padding-top: calc(1.66rem - 1px);
+    padding-bottom: calc(1.66rem - 1px);
+}
+
+.elements-prod-left-5>* {
+    padding-right: calc(1.66rem - 1px);
+}
+
+.elements-prod-up-5>* {
+    padding-bottom: calc(1.66rem - 1px);
+}
+
+.elements-prod-right-5>* {
+    padding-left: calc(1.66rem - 1px);
+}
+
+.elements-prod-down-5>* {
+    padding-top: calc(1.66rem - 1px);
+}
