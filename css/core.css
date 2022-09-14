@@ -2196,3 +2196,33 @@ body.format-sections section:not(.no-format)>.row {
 .elements-prod-down-3>* {
     padding-top: calc(1rem - 1px);
 }
+
+.elements-prod-4>* {
+    padding: calc(1.33rem - 1px);
+}
+
+.elements-prod-horizontal-4>* {
+    padding-right: calc(1.33rem - 1px);
+    padding-left: calc(1.33rem - 1px);
+}
+
+.elements-prod-vertical-4>* {
+    padding-top: calc(1.33rem - 1px);
+    padding-bottom: calc(1.33rem - 1px);
+}
+
+.elements-prod-left-4>* {
+    padding-right: calc(1.33rem - 1px);
+}
+
+.elements-prod-up-4>* {
+    padding-bottom: calc(1.33rem - 1px);
+}
+
+.elements-prod-right-4>* {
+    padding-left: calc(1.33rem - 1px);
+}
+
+.elements-prod-down-4>* {
+    padding-top: calc(1.33rem - 1px);
+}
