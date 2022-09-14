@@ -134,6 +134,98 @@ input {
     font-family: Helvetica, Arial, Verdana, sans-serif;
 }
 
+/* Color Themes  */
+
+body,
+body.theme-light {
+    /* Color used for background formerly d3d3d3*/
+    --colorBase: var(--nearWhite);
+    /* Color slightly off from base color */
+    --colorBaseWeak: var(--whiteGrey);
+    /* Color used for elements and body text*/
+    --primaryElementColor: var(--midLightGrey);
+    /* Color slightly off from color first used for sidebar  */
+    --subPrimeElementColor: var(--lighterGrey);
+    /* Secondary color used for elements*/
+    --secondaryElementColor: var(--middleGrey);
+    /* Color used for text and outlines */
+    --primaryLineColor: var(--nearBlack);
+
+    --inverseLineColor: var(--nearWhite);
+
+    --onBaseColorPrimary: var(--nearBlack);
+
+    --onBaseColorSecondary: var(--darkGrey);
+
+    --onBaseColorWeak: var(--lightGrey);
+
+    --onElementColorPrimary: var(--nearWhite);
+
+    --onElementColorSecondary: var(--whiteGrey);
+
+    --primaryUIcolor: var(--nearWhite);
+
+    --subPrimaryUIColor: var(--whiteGrey);
+
+    --onUIColorPrimary: var(--nearBlack);
+
+    --secondaryUIcolor: var(--nearWhite);
+
+    --subSecondaryUIColor: var(--whiteGrey);
+
+    --onUIColorSecondary: var(--nearBlack);
+
+    --shadowColorPrimary: var(--darkShadow);
+
+    --shadowColorSecondary: var(--darkShadowWeak);
+}
+
+body.theme-dark {
+    --colorBase: var(--middleGrey);
+    --colorBaseWeak: var(--midLightGrey);
+    --primaryElementColor: var(--darkerGrey);
+    --subPrimeElementColor: var(--midDarkGrey);
+    --secondaryElementColor: var(--darkGrey);
+    --primaryLineColor: var(--nearWhite);
+    --inverseLineColor: var(--nearBlack);
+    --onBaseColorPrimary: var(--nearWhite);
+    --onBaseColorSecondary: var(--whiteGrey);
+    --onBaseColorWeak: var(--lighterGrey);
+    --onElementColorPrimary: var(--nearWhite);
+    --onElementColorSecondary: var(--whiteGrey);
+    --primaryUIcolor: var(--nearWhite);
+    --subPrimaryUIColor: var(--whiteGrey);
+    --onUIColorPrimary: var(--nearBlack);
+    --secondaryUIcolor: var(--middleGrey);
+    --subSecondaryUIColor: var(--midLightGrey);
+    --onUIColorSecondary: var(--nearWhite);
+    --shadowColorPrimary: var(--darkShadow);
+    --shadowColorSecondary: var(--darkShadowWeak);
+}
+
+body.theme-night {
+    --colorBase: var(--nearBlack);
+    --colorBaseWeak: var(--darkGrey);
+    --primaryElementColor: var(--midDarkGrey);
+    --subPrimeElementColor: var(--darkerGrey);
+    --secondaryElementColor: var(--middleGrey);
+    --primaryLineColor: var(--nearWhite);
+    --inverseLineColor: var(--nearBlack);
+    --onBaseColorPrimary: var(--nearWhite);
+    --onBaseColorSecondary: var(--whiteGrey);
+    --onBaseColorWeak: var(--darkerGrey);
+    --onElementColorPrimary: var(--nearWhite);
+    --onElementColorSecondary: var(--whiteGrey);
+    --primaryUIcolor: var(--whiteGrey);
+    --subPrimaryUIColor: var(--lightGrey);
+    --onUIColorPrimary: var(--nearBlack);
+    --secondaryUIcolor: var(--darkGrey);
+    --subSecondaryUIColor: var(--darkerGrey);
+    --onUIColorSecondary: var(--lightGrey);
+    --shadowColorPrimary: var(--lightShadow);
+    --shadowColorSecondary: var(--lightShadowWeak);
+}
+
 progress,
 .stack:not(:last-child),
 /* .container:not(:last-child), */
@@ -356,97 +448,7 @@ nav.sidebar .selected {
 
 
 
-/* Color Themes  */
 
-body,
-body.theme-light {
-    /* Color used for background formerly d3d3d3*/
-    --colorBase: var(--nearWhite);
-    /* Color slightly off from base color */
-    --colorBaseWeak: var(--whiteGrey);
-    /* Color used for elements and body text*/
-    --primaryElementColor: var(--midLightGrey);
-    /* Color slightly off from color first used for sidebar  */
-    --subPrimeElementColor: var(--lighterGrey);
-    /* Secondary color used for elements*/
-    --secondaryElementColor: var(--middleGrey);
-    /* Color used for text and outlines */
-    --primaryLineColor: var(--nearBlack);
-
-    --inverseLineColor: var(--nearWhite);
-
-    --onBaseColorPrimary: var(--nearBlack);
-
-    --onBaseColorSecondary: var(--darkGrey);
-
-    --onBaseColorWeak: var(--lightGrey);
-
-    --onElementColorPrimary: var(--nearWhite);
-
-    --onElementColorSecondary: var(--whiteGrey);
-
-    --primaryUIcolor: var(--nearWhite);
-
-    --subPrimaryUIColor: var(--whiteGrey);
-
-    --onUIColorPrimary: var(--nearBlack);
-
-    --secondaryUIcolor: var(--nearWhite);
-
-    --subSecondaryUIColor: var(--whiteGrey);
-
-    --onUIColorSecondary: var(--nearBlack);
-
-    --shadowColorPrimary: var(--darkShadow);
-
-    --shadowColorSecondary: var(--darkShadowWeak);
-}
-
-body.theme-dark {
-    --colorBase: var(--middleGrey);
-    --colorBaseWeak: var(--midLightGrey);
-    --primaryElementColor: var(--darkerGrey);
-    --subPrimeElementColor: var(--midDarkGrey);
-    --secondaryElementColor: var(--darkGrey);
-    --primaryLineColor: var(--nearWhite);
-    --inverseLineColor: var(--nearBlack);
-    --onBaseColorPrimary: var(--nearWhite);
-    --onBaseColorSecondary: var(--whiteGrey);
-    --onBaseColorWeak: var(--lighterGrey);
-    --onElementColorPrimary: var(--nearWhite);
-    --onElementColorSecondary: var(--whiteGrey);
-    --primaryUIcolor: var(--nearWhite);
-    --subPrimaryUIColor: var(--whiteGrey);
-    --onUIColorPrimary: var(--nearBlack);
-    --secondaryUIcolor: var(--middleGrey);
-    --subSecondaryUIColor: var(--midLightGrey);
-    --onUIColorSecondary: var(--nearWhite);
-    --shadowColorPrimary: var(--darkShadow);
-    --shadowColorSecondary: var(--darkShadowWeak);
-}
-
-body.theme-night {
-    --colorBase: var(--nearBlack);
-    --colorBaseWeak: var(--darkGrey);
-    --primaryElementColor: var(--midDarkGrey);
-    --subPrimeElementColor: var(--darkerGrey);
-    --secondaryElementColor: var(--middleGrey);
-    --primaryLineColor: var(--nearWhite);
-    --inverseLineColor: var(--nearBlack);
-    --onBaseColorPrimary: var(--nearWhite);
-    --onBaseColorSecondary: var(--whiteGrey);
-    --onBaseColorWeak: var(--darkerGrey);
-    --onElementColorPrimary: var(--nearWhite);
-    --onElementColorSecondary: var(--whiteGrey);
-    --primaryUIcolor: var(--whiteGrey);
-    --subPrimaryUIColor: var(--lightGrey);
-    --onUIColorPrimary: var(--nearBlack);
-    --secondaryUIcolor: var(--darkGrey);
-    --subSecondaryUIColor: var(--darkerGrey);
-    --onUIColorSecondary: var(--lightGrey);
-    --shadowColorPrimary: var(--lightShadow);
-    --shadowColorSecondary: var(--lightShadowWeak);
-}
 
 body,
 main {
