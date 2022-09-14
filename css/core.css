@@ -661,6 +661,8 @@ header {
     --popup-color: var(--onElementColorPrimary);
 }
 
+/* NEED TO FINISH TOOLTIPS */
+
 .tooltip {
     position: relative;
 }
@@ -890,6 +892,8 @@ button {
     cursor: pointer;
     filter: brightness(100%);
 }
+
+/* NEED TO CHANGE HOVER EFFECT SO THAT IT CHANGES BG COLOR NOT FILTER */
 
 .button:not(.no-hover):hover,
 .button.show-hover:not(.no-hover),
@@ -1993,7 +1997,12 @@ body.format-sections section:not(.no-format)>.row {
     margin-top: calc(1rem - 1px);
 }
 
+
+
 /* Slate Prod */
+
+
+
 .prod,
 .prod-1 {
     padding: calc(0.33rem - 1px);
