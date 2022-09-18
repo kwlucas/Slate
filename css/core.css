@@ -24,7 +24,11 @@
     /*#04AA6D; /* #58FC8C */
     --subSuccessColor: #39E36F;
 
+    --brown: #964B00;
+
     --red: #FF0000;
+
+    --pink: #FFC0CB;
 
     --yellow: #FFFF00;
 
@@ -34,9 +38,13 @@
 
     --green: #008000;
 
+    --cyan: #00FFFF;
+
     --blue: #0000FF;
 
     --purple: #800080;
+
+    --magenta: #FF00FF;
 
     --darkShadow: rgba(0, 0, 0, 0.24);
     --darkShadowWeak: rgba(0, 0, 0, 0.1);
