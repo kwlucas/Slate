@@ -24,9 +24,9 @@
     /*#04AA6D; /* #58FC8C */
     --subSuccessColor: #39E36F;
 
-    --brown: #964B00;
-
     --maroon: #800000;
+
+    --brown: #964B00;
 
     --salmon: #FA8072;
 
@@ -60,6 +60,8 @@
 
     --navy: #000080;
     
+    --midnightBlue: #191970;
+    
     --indigo: #4B0082;
     
     --purple: #800080;
@@ -68,7 +70,6 @@
     
     --magenta: #FF00FF;
     
-    --midnightBlue: #191970;
 
     --darkShadow: rgba(0, 0, 0, 0.24);
     --darkShadowWeak: rgba(0, 0, 0, 0.1);
