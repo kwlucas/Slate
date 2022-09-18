@@ -24,6 +24,20 @@
     /*#04AA6D; /* #58FC8C */
     --subSuccessColor: #39E36F;
 
+    --red: #FF0000;
+
+    --yellow: #FFFF00;
+
+    --orange: #FF8000;
+
+    --limeGreen: #00FF00;
+
+    --green: #008000;
+
+    --blue: #0000FF;
+
+    --purple: #800080;
+
     --darkShadow: rgba(0, 0, 0, 0.24);
     --darkShadowWeak: rgba(0, 0, 0, 0.1);
     --lightShadow: rgba(115, 115, 115, 0.24);
