@@ -26,7 +26,11 @@
 
     --brown: #964B00;
 
+    --maroon: #800000;
+
     --red: #FF0000;
+
+    --rose: #FF007F;
 
     --pink: #FFC0CB;
 
@@ -38,13 +42,24 @@
 
     --limeGreen: #00FF00;
 
+    --turquoise: #40E0D0;
+
     --cyan: #00FFFF;
+    --aqua: #00FFFF;
+
+    --navy: #000080;
 
     --blue: #0000FF;
-
+    
+    --indigo: #4B0082;
+    
     --purple: #800080;
-
+    
+    --violet: #8F00FF;
+    
     --magenta: #FF00FF;
+    
+    --midnightBlue: #191970;
 
     --darkShadow: rgba(0, 0, 0, 0.24);
     --darkShadowWeak: rgba(0, 0, 0, 0.1);
