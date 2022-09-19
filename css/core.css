@@ -280,9 +280,13 @@ progress,
     margin-bottom: 0.33rem;
 }
 
-.auto-space.vertical>*:not(:last-child)
+.auto-space.vertical>*:not(:last-child),
 .auto-space>*:not(:last-child) {
     margin-bottom: 0.33rem;
+}
+
+.auto-space.horizontal>*:not(:last-child) {
+    margin-right: 0.33rem;
 }
 
 .row .stack:last-child,
