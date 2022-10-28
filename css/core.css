@@ -560,6 +560,11 @@ ol.bullet-point.dash {
     list-style-type: "-";
 }
 
+ul.bullet-point.checkmark,
+ol.bullet-point.checkmark {
+    list-style-type: "\2713";
+}
+
 ul.inside,
 ol.inside {
     list-style-position: inside;
