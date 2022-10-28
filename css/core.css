@@ -760,6 +760,13 @@ ul.inline.bullet-point li.no-spacer {
     float: left;
 }
 
+ol.inline-list.bullet-point li.remove-point,
+ul.inline-list.bullet-point li.remove-point,
+ol.inline.bullet-point li.remove-point,
+ul.inline.bullet-point li.remove-point {
+    display: inline;
+}
+
 .sidebar,
 .sidebar.left {
     background-color: var(--subPrimeElementColor);
