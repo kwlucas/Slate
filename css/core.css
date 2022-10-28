@@ -733,7 +733,7 @@ main {
 }
 
 .inline-flex,
-.inline {
+:not(ol,ul).inline {
     display:inline-flex;
     align-items: baseline;
 }
