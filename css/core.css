@@ -597,6 +597,62 @@ ol.bullet-point.star-white {
     list-style-type: "\2606";
 }
 
+ul.bullet-point.spade-suit,
+ol.bullet-point.spade-suit,
+ul.bullet-point.spade,
+ol.bullet-point.spade {
+    list-style-type: "\2660";
+}
+
+ul.bullet-point.spade-white-suit,
+ol.bullet-point.spade-white-suit,
+ul.bullet-point.spade-white,
+ol.bullet-point.spade-white {
+    list-style-type: "\2664";
+}
+
+ul.bullet-point.heart-suit,
+ol.bullet-point.heart-suit,
+ul.bullet-point.heart,
+ol.bullet-point.heart {
+    list-style-type: "\2665";
+}
+
+ul.bullet-point.heart-white-suit,
+ol.bullet-point.heart-white-suit,
+ul.bullet-point.heart-white,
+ol.bullet-point.heart-white {
+    list-style-type: "\2661";
+}
+
+ul.bullet-point.club-suit,
+ol.bullet-point.club-suit,
+ul.bullet-point.club,
+ol.bullet-point.club {
+    list-style-type: "\2663";
+}
+
+ul.bullet-point.club-white-suit,
+ol.bullet-point.club-white-suit,
+ul.bullet-point.club-white,
+ol.bullet-point.club-white {
+    list-style-type: "\2667";
+}
+
+ul.bullet-point.diamond-suit,
+ol.bullet-point.diamond-suit,
+ul.bullet-point.diamond,
+ol.bullet-point.diamond {
+    list-style-type: "\2666";
+}
+
+ul.bullet-point.diamond-white-suit,
+ol.bullet-point.diamond-white-suit,
+ul.bullet-point.diamond-white,
+ol.bullet-point.diamond-white {
+    list-style-type: "\2662";
+}
+
 ul.inside,
 ol.inside {
     list-style-position: inside;
