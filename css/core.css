@@ -745,18 +745,18 @@ ul.inline:not(.bullet-point) li {
     display: inline;
 }
 
-ol.inline-list.bullet-point li:not(.no-spacer, .remove-point),
-ul.inline-list.bullet-point li:not(.no-spacer, .remove-point),
-ol.inline.bullet-point li:not(.no-spacer, .remove-point),
-ul.inline.bullet-point li:not(.no-spacer, .remove-point) {
+ol.inline-list.bullet-point li:not(.no-spacer),
+ul.inline-list.bullet-point li:not(.no-spacer),
+ol.inline.bullet-point li:not(.no-spacer),
+ul.inline.bullet-point li:not(.no-spacer) {
     float: left;
     padding-right: 1.5em;
 }
 
-ol.inline-list.bullet-point li.no-spacer:not(.remove-point),
-ul.inline-list.bullet-point li.no-spacer:not(.remove-point),
-ol.inline.bullet-point li.no-spacer:not(.remove-point),
-ul.inline.bullet-point li.no-spacer:not(.remove-point) {
+ol.inline-list.bullet-point li.no-spacer,
+ul.inline-list.bullet-point li.no-spacer,
+ol.inline.bullet-point li.no-spacer,
+ul.inline.bullet-point li.no-spacer {
     float: left;
 }
 
