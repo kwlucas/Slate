@@ -743,7 +743,6 @@ ul.inline-list,
 ol.inline,
 ul.inline {
     display:inline;
-    align-items: baseline;
 }
 
 .sidebar,
