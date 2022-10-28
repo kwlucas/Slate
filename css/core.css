@@ -745,6 +745,14 @@ ul.inline:not(.bullet-point) li {
     display: inline;
 }
 
+ol.inline-list.bullet-point li,
+ul.inline-list.bullet-point li,
+ol.inline.bullet-point li,
+ul.inline.bullet-point li {
+    float: left;
+    padding-right: 1.5em;
+}
+
 .sidebar,
 .sidebar.left {
     background-color: var(--subPrimeElementColor);
