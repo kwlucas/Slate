@@ -585,6 +585,18 @@ ol.bullet-point.arrowhead {
     list-style-type: "\27A4";
 }
 
+ul.bullet-point.star-black,
+ol.bullet-point.star-black,
+ul.bullet-point.star,
+ol.bullet-point.star {
+    list-style-type: "\2605";
+}
+
+ul.bullet-point.star-white,
+ol.bullet-point.star-white {
+    list-style-type: "\2606";
+}
+
 ul.inside,
 ol.inside {
     list-style-position: inside;
