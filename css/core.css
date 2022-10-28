@@ -555,6 +555,11 @@ ol.bullet-point.circle {
     list-style-type: circle;
 }
 
+ul.bullet-point.dash,
+ol.bullet-point.dash {
+    list-style-type: "-";
+}
+
 ul.inside,
 ol.inside {
     list-style-position: inside;
