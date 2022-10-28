@@ -738,10 +738,10 @@ main {
     align-items: baseline;
 }
 
-ol.inline-list li,
-ul.inline-list li,
-ol.inline li,
-ul.inline li {
+ol.inline-list:not(.bullet-point) li,
+ul.inline-list:not(.bullet-point) li,
+ol.inline:not(.bullet-point) li,
+ul.inline:not(.bullet-point) li {
     display: inline;
 }
 
