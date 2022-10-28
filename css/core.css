@@ -565,6 +565,11 @@ ol.bullet-point.checkmark {
     list-style-type: "\2713";
 }
 
+ul.bullet-point.x-mark,
+ol.bullet-point.x-mark {
+    list-style-type: "\2717";
+}
+
 ul.inside,
 ol.inside {
     list-style-position: inside;
