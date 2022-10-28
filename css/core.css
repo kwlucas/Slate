@@ -580,6 +580,11 @@ ol.bullet-point.plus {
     list-style-type: "\1F7A3";
 }
 
+ul.bullet-point.arrowhead,
+ol.bullet-point.arrowhead {
+    list-style-type: "\27A4";
+}
+
 ul.inside,
 ol.inside {
     list-style-position: inside;
