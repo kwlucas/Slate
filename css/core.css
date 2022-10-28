@@ -738,10 +738,14 @@ main {
     align-items: baseline;
 }
 
-ol.inline-list,
-ul.inline-list,
-ol.inline,
-ul.inline {
+li.inline-list>li,
+li.inline-list>li,
+li.inline>li,
+li.inline>li,
+ol.inline-list>li,
+ul.inline-list>li,
+ol.inline>li,
+ul.inline>li {
     display:inline;
 }
 
