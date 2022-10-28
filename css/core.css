@@ -538,6 +538,8 @@ nav.sidebar .selected {
     background-color: var(--infoColor) !important;
 }
 
+ul.bullet-point.disc,
+ol.bullet-point.disc,
 ul.bullet-point,
 ol.bullet-point {
     list-style-type: disc;
