@@ -540,12 +540,17 @@ nav.sidebar .selected {
 
 ul.bullet-point,
 ol.bullet-point {
-    list-style: disc;
+    list-style-type: disc;
 }
 
 ul.bullet-point.square,
 ol.bullet-point.square {
-    list-style: square;
+    list-style-type: square;
+}
+
+ul.bullet-point.circle,
+ol.bullet-point.circle {
+    list-style-type: circle;
 }
 
 ul.inside,
