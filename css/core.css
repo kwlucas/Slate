@@ -728,8 +728,21 @@ main {
     justify-content: flex-end;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
+.inline-flex,
 .inline {
     display:inline-flex;
+    align-items: baseline;
+}
+
+ol.inline-list,
+ul.inline-list,
+ol.inline,
+ul.inline {
+    display:inline;
     align-items: baseline;
 }
 
