@@ -570,6 +570,11 @@ ol.bullet-point.x-mark {
     list-style-type: "\2717";
 }
 
+ul.bullet-point.crossmark,
+ol.bullet-point.crossmark {
+    list-style-type: "\274C";
+}
+
 ul.inside,
 ol.inside {
     list-style-position: inside;
