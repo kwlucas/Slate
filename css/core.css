@@ -538,9 +538,20 @@ nav.sidebar .selected {
     background-color: var(--infoColor) !important;
 }
 
+ul.bullet-point,
+ol.bullet-point {
+    list-style:disc;
+}
 
+ul.inside,
+ol.inside {
+    list-style-position: inside;
+}
 
-
+ul.outside,
+ol.outside {
+    list-style-position: outside;
+}
 
 body,
 main {
