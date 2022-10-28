@@ -745,12 +745,19 @@ ul.inline:not(.bullet-point) li {
     display: inline;
 }
 
-ol.inline-list.bullet-point li,
-ul.inline-list.bullet-point li,
-ol.inline.bullet-point li,
-ul.inline.bullet-point li {
+ol.inline-list.bullet-point li:not(.no-spacer, .remove-point),
+ul.inline-list.bullet-point li:not(.no-spacer, .remove-point),
+ol.inline.bullet-point li:not(.no-spacer, .remove-point),
+ul.inline.bullet-point li:not(.no-spacer, .remove-point) {
     float: left;
     padding-right: 1.5em;
+}
+
+ol.inline-list.bullet-point li.no-spacer:not(.remove-point),
+ul.inline-list.bullet-point li.no-spacer:not(.remove-point),
+ol.inline.bullet-point li.no-spacer:not(.remove-point),
+ul.inline.bullet-point li.no-spacer:not(.remove-point) {
+    float: left;
 }
 
 .sidebar,
