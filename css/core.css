@@ -682,6 +682,9 @@ main {
     visibility: hidden;
 }
 
+.clickable {
+    cursor: pointer;
+}
 
 .navbar {
     background-color: var(--primaryElementColor);
