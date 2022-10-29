@@ -696,34 +696,42 @@ main {
 
 .navbar.seperate,
 .navbar.push-apart,
+.inline.seperate,
+.inline.push-apart,
 .container.seperate,
 .container.push-apart {
     justify-content: space-between;
 }
 
 .navbar.split,
+.inline.split,
 .container.split {
     justify-content: space-around;
 }
 
 .navbar.split-evenly,
+.inline.split-evenly,
 .container.split-evenly {
     justify-content: space-evenly;
 }
 
 .navbar.center,
 .navbar.push-center,
+.inline.center,
+.inline.push-center,
 .container.center,
 .container.push-center {
     justify-content: center;
 }
 
 .navbar.push-start,
+.inline.push-start,
 .container.push-start {
     justify-content: flex-start;
 }
 
 .navbar.push-end,
+.inline.push-end,
 .container.push-end {
     justify-content: flex-end;
 }
