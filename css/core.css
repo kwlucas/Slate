@@ -1562,6 +1562,21 @@ input.show-selected:not(.set-in) {
     padding-bottom: 0.66rem;
 } */
 
+.card.flip>.front>.header.inline,
+.card.flip>.front>img.inline,
+.card.flip>.front>.body.inline,
+.card.flip>.front>.footer.inline,
+.card.flip>.back>.header.inline,
+.card.flip>.back>img.inline,
+.card.flip>.back>.body.inline,
+.card.flip>.back>.footer.inline,
+.card>.header.inline,
+.card>img.inline,
+.card>.body.inline,
+.card>.footer.inline{
+    width: 100%;
+}
+
 .card.flip>.front>.shaded,
 .card.flip>.back>.shaded,
 .card>.shaded {
