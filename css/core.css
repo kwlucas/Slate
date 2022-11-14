@@ -1255,6 +1255,27 @@ button.no-border,
     border: none;
 }
 
+.button-group {
+    display: inline-flex;
+    width: 100%;
+}
+
+.button-group
+.button-group.spacing-1 {
+    --group-spacing: 0.33rem;
+}
+
+/* Make buttons within a button group scale automatically to fill group */
+.button-group button,
+.button-group .button {
+    flex: 1 1 0;
+}
+
+.button-group button:not(:last-child),
+.button-group .button:not(:last-child) {
+    margin-right: var(--group-spacing);
+}
+
 .button-strip {
     display: flex;
     align-items: center;
