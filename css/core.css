@@ -1420,6 +1420,10 @@ input.show-selected:not(.set-in) {
     resize: vertical;
 }
 
+.allow-resize-horizontal {
+    resize: horizontal;
+}
+
 /* Tables with effect like hover */
 /* Hide and show content with peek and show more  */
 
