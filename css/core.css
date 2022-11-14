@@ -749,6 +749,10 @@ main {
     align-items: baseline;
 }
 
+.float-right {
+    float: right;
+}
+
 ol.inline-list:not(.bullet-point) li,
 ul.inline-list:not(.bullet-point) li,
 ol.inline:not(.bullet-point) li,
