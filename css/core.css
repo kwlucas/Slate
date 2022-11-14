@@ -1265,6 +1265,14 @@ button.no-border,
     --group-spacing: 0.33rem;
 }
 
+.button-group.spacing-1\/2 {
+    --group-spacing: 0.15rem;
+}
+
+.button-group.spacing-2 {
+    --group-spacing: 0.66rem;
+}
+
 /* Make buttons within a button group scale automatically to fill group */
 .button-group button,
 .button-group .button {
