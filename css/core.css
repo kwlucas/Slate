@@ -753,6 +753,10 @@ main {
     float: right;
 }
 
+.float-left {
+    float: left;
+}
+
 ol.inline-list:not(.bullet-point) li,
 ul.inline-list:not(.bullet-point) li,
 ol.inline:not(.bullet-point) li,
