@@ -1268,7 +1268,7 @@ button.no-border,
     width: 100%;
 }
 
-.button-group
+.button-group,
 .button-group.spacing-1 {
     --group-spacing: 0.33rem;
 }
