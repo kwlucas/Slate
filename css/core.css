@@ -1412,6 +1412,10 @@ input.show-selected:not(.set-in) {
     border-color: var(--primaryLineColor);
 }
 
+.allow-resize {
+    resize: both;
+}
+
 /* Tables with effect like hover */
 /* Hide and show content with peek and show more  */
 
