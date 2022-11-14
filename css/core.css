@@ -1416,6 +1416,10 @@ input.show-selected:not(.set-in) {
     resize: both;
 }
 
+.allow-resize-vertical {
+    resize: vertical;
+}
+
 /* Tables with effect like hover */
 /* Hide and show content with peek and show more  */
 
