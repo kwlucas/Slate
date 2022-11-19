@@ -213,6 +213,7 @@ html {
 }
 
 body,
+textarea,
 input {
     font-family: Helvetica, Arial, Verdana, sans-serif;
 }
