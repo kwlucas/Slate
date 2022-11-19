@@ -1786,6 +1786,10 @@ input.show-selected:not(.set-in) {
     text-align: end;
 }
 
+.text-align-start {
+    text-align: start;
+}
+
 /* Slate Layout */
 /* Sidebar Body Sidebar */
 /* Slate Sections */
