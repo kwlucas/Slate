@@ -420,6 +420,7 @@ h6 {
     font-size: 1rem;
 }
 
+.no-text-decor,
 .tree a,
 nav.sidebar a {
     text-decoration: none;
