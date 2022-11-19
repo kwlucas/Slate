@@ -1786,11 +1786,11 @@ input.show-selected:not(.set-in) {
     text-align: justify;
 }
 
-.text-align-end {
+.align-text-end {
     text-align: end;
 }
 
-.text-align-start {
+.align-text-start {
     text-align: start;
 }
 
