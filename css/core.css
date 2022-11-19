@@ -1782,6 +1782,10 @@ input.show-selected:not(.set-in) {
     text-align: center;
 }
 
+.justify-text {
+    text-align: justify;
+}
+
 .text-align-end {
     text-align: end;
 }
