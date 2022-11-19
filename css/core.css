@@ -1782,6 +1782,10 @@ input.show-selected:not(.set-in) {
     text-align: center;
 }
 
+.text-align-end {
+    text-align: end;
+}
+
 /* Slate Layout */
 /* Sidebar Body Sidebar */
 /* Slate Sections */
