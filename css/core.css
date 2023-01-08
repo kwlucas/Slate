@@ -13,6 +13,7 @@
     /* Color used for elements and body text in "darkmode" */
     /* Color used for element text in "darkmode*/
 
+    /* remove "Color" from these variable names? */
     --cautionColor: #FCFC72;
     --subCautionColor: #E3E366;
     --dangerColor: #fd5b58ff;
